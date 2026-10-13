@@ -1,0 +1,1111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Book PS5 slots at Portal XO Game Zone, Vavol, Gandhinagar.">
+<style>[hidden]{display:none!important} html,body{margin:0} :root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)} img{max-width:100%}</style>
+<title>Portal XO</title>
+<meta name="theme-color" content="#07041a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Exo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: one phone-first column, sticky brand header, fixed bottom tab bar. Single neon-arcade look (brand), gold "Elite" skin for members. */
+:root{
+  color-scheme: dark;
+  --bg:#07041a; --panel:rgba(26,15,66,.62); --panel2:rgba(40,22,96,.55);
+  --line:rgba(160,120,255,.22); --text:#f1ecff; --muted:#a99fd8; --dim:#7a72ad;
+  --pink:#ff2bd6; --cyan:#22e6ff; --purple:#8b5cf6; --sun:#ffb23e; --orange:#ff8a3d; --green:#3dffa8; --red:#ff3d6e;
+  --gold1:#fff3c4; --gold2:#ffcb47; --gold3:#c8871e; --ink:#1a0f00;
+  --display:'Orbitron', 'Arial Black', system-ui, sans-serif;
+  --body:'Exo 2', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --r:18px;
+}
+body.elite{ --pink:#ffc53d; --purple:#ff7a3d; --line:rgba(255,197,61,.24); --panel:rgba(48,28,30,.6); --panel2:rgba(70,40,30,.55) }
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{background:var(--bg);color:var(--text);font-family:var(--body);min-height:100%}
+body{overflow-x:hidden;font-size:15px}
+button,input,select{font:inherit;color:inherit}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+.bgfx{position:fixed;inset:0;z-index:-2;pointer-events:none;background:
+  radial-gradient(60% 40% at 10% 0%,rgba(255,43,214,.22),transparent 70%),
+  radial-gradient(50% 40% at 100% 8%,rgba(34,230,255,.15),transparent 70%),
+  radial-gradient(80% 50% at 50% 110%,rgba(139,92,246,.38),transparent 70%),var(--bg)}
+body.elite .bgfx{background:
+  radial-gradient(60% 40% at 10% 0%,rgba(255,197,61,.18),transparent 70%),
+  radial-gradient(50% 40% at 100% 8%,rgba(255,122,61,.14),transparent 70%),
+  radial-gradient(80% 50% at 50% 110%,rgba(200,135,30,.28),transparent 70%),var(--bg)}
+.grid{position:fixed;left:-50%;right:-50%;bottom:0;height:40vh;z-index:-1;pointer-events:none;
+  background-image:linear-gradient(var(--pink) 1px,transparent 1px),linear-gradient(90deg,var(--pink) 1px,transparent 1px);
+  background-size:48px 48px;transform:perspective(320px) rotateX(62deg);transform-origin:bottom;
+  -webkit-mask-image:linear-gradient(to top,rgba(0,0,0,.35),transparent 85%);mask-image:linear-gradient(to top,rgba(0,0,0,.35),transparent 85%);opacity:.3}
+.app{max-width:760px;margin:0 auto;padding-inline:16px;padding-block:0 calc(110px + env(safe-area-inset-bottom,0px))}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 0 12px;background:linear-gradient(var(--bg) 72%,transparent)}
+.logo{line-height:1;display:flex;align-items:center;gap:10px;min-width:0}
+.orb{flex:0 0 auto;width:40px;height:40px;border-radius:50%;background:radial-gradient(circle at 50% 40%,#ffb23e 0 22%,#ff2bd6 23% 46%,#2a1166 47% 100%);box-shadow:0 0 0 2px var(--purple),0 0 18px rgba(255,43,214,.6)}
+.logo b{display:block;font-family:var(--display);font-weight:900;font-style:italic;font-size:20px;letter-spacing:.5px;
+  background:linear-gradient(180deg,#fff6c8 0%,#ffb23e 35%,#ff2bd6 70%,#a77bff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 8px rgba(255,43,214,.5))}
+.logo span{display:block;font-family:var(--display);font-weight:600;font-size:9px;letter-spacing:4px;color:var(--cyan);margin-top:4px}
+.hright{display:flex;align-items:center;gap:8px}
+.clock{font-family:var(--display);font-size:12px;color:var(--muted);text-align:right;line-height:1.3;font-variant-numeric:tabular-nums}
+.clock small{display:block;font-family:var(--body);font-size:10px;color:var(--dim);letter-spacing:1px}
+.iconbtn{width:40px;height:40px;border-radius:12px;border:1px solid var(--line);background:var(--panel);display:grid;place-items:center;cursor:pointer;color:var(--text)}
+.rolepill{font-family:var(--display);font-size:9px;font-weight:800;letter-spacing:2px;padding:5px 8px;border-radius:8px;border:1px solid var(--cyan);color:var(--cyan)}
+.hrschip{font-family:var(--display);font-size:11px;font-weight:800;padding:7px 10px;border-radius:10px;background:linear-gradient(135deg,var(--gold1),var(--gold2) 50%,var(--gold3));color:var(--ink)}
+h2{font-family:var(--display);font-size:14px;letter-spacing:2px;text-transform:uppercase;margin:22px 0 10px;color:#fff;text-wrap:balance}
+h2 em{font-style:normal;color:var(--cyan)}
+body.elite h2 em{color:var(--gold2)}
+.muted{color:var(--muted)} .small{font-size:12px} .dim{color:var(--dim)}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:560px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.stat small{display:block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted)}
+.stat b{display:block;font-family:var(--display);font-size:20px;margin-top:6px;font-variant-numeric:tabular-nums}
+.p{color:var(--pink)} .c{color:var(--cyan)} .s{color:var(--sun)} .g{color:var(--green)}
+.stations{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:560px){.stations{grid-template-columns:1fr 1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:16px;position:relative;overflow:hidden;min-width:0}
+.station.playing{border-color:rgba(255,43,214,.55);box-shadow:0 0 26px rgba(255,43,214,.16)}
+.station.soon{border-color:rgba(255,138,61,.7)}
+.station.over{border-color:rgba(255,61,110,.85);animation:pulse 1.4s infinite}
+.station.free{border-color:rgba(34,230,255,.35)}
+@keyframes pulse{50%{box-shadow:0 0 34px rgba(255,61,110,.45)}}
+.st-top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}
+.st-name{font-family:var(--display);font-weight:800;font-size:15px;letter-spacing:1px}
+.pill{flex:0 0 auto;font-size:10px;font-weight:700;letter-spacing:1.5px;padding:5px 9px;border-radius:99px;text-transform:uppercase;border:1px solid;white-space:nowrap}
+.pill.playing{color:var(--pink);border-color:var(--pink);background:rgba(255,43,214,.1)}
+.pill.soon{color:var(--orange);border-color:var(--orange);background:rgba(255,138,61,.12)}
+.pill.over{color:var(--red);border-color:var(--red);background:rgba(255,61,110,.14)}
+.pill.free{color:var(--green);border-color:rgba(61,255,168,.5);background:rgba(61,255,168,.08)}
+.pill.gold{color:var(--ink);border-color:var(--gold2);background:linear-gradient(135deg,var(--gold1),var(--gold2))}
+.who{font-weight:700;font-size:16px}
+.timer{font-family:var(--display);font-weight:800;font-size:36px;margin:8px 0 2px;letter-spacing:1px;font-variant-numeric:tabular-nums}
+.station.soon .timer{color:var(--orange)} .station.over .timer{color:var(--red)}
+.bar{height:6px;border-radius:9px;background:rgba(255,255,255,.08);margin:12px 0;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--purple),var(--pink),var(--sun));border-radius:9px}
+.next{font-size:13px;padding:9px 11px;border-radius:11px;background:rgba(255,255,255,.04);border:1px solid var(--line);margin-bottom:12px}
+.next.warn{border-color:rgba(255,138,61,.6);background:rgba(255,138,61,.1);color:#ffd3b8}
+.next.ok{color:#c5ffe6;border-color:rgba(61,255,168,.3);background:rgba(61,255,168,.06)}
+.ready{font-family:var(--display);font-weight:900;font-size:30px;margin:6px 0 12px;color:transparent;-webkit-text-stroke:1px var(--cyan)}
+.arrive{border:1px dashed rgba(34,230,255,.55);background:rgba(34,230,255,.07);border-radius:12px;padding:11px;margin-bottom:12px}
+.arrive b{color:var(--cyan)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.btn{min-height:46px;border-radius:13px;border:1px solid var(--line);background:var(--panel2);font-weight:700;font-size:14px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:0 14px;text-decoration:none;text-align:center;transition:transform .08s}
+.btn:active{transform:scale(.97)}
+.btn.primary{border:0;background:linear-gradient(135deg,var(--pink),var(--purple));box-shadow:0 0 18px rgba(255,43,214,.35);color:#fff}
+body.elite .btn.primary{color:var(--ink);box-shadow:0 0 18px rgba(255,197,61,.35)}
+.btn.cyan{border:0;background:linear-gradient(135deg,#19c9ff,#7a5cff);color:#fff}
+.btn.wa{border:0;background:linear-gradient(135deg,#25d366,#0f9f6e);color:#fff}
+.btn.gold{border:0;background:linear-gradient(135deg,var(--gold1),var(--gold2) 45%,var(--gold3));color:var(--ink)}
+.btn.danger{color:var(--red);border-color:rgba(255,61,110,.45)}
+.btn.ghost{background:none;border-color:transparent;color:var(--muted);font-weight:600}
+.btn.wide{width:100%}
+.btn.sm{min-height:36px;font-size:12px;border-radius:10px;padding:0 10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{min-height:40px;padding:0 14px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.04);font-weight:600;font-size:14px;cursor:pointer}
+.chip.on{border-color:var(--pink);background:rgba(255,43,214,.16);color:#fff;box-shadow:0 0 12px rgba(255,43,214,.3)}
+body.elite .chip.on{background:rgba(255,197,61,.14)}
+.field{margin-bottom:14px}
+.field>label,.lbl{display:block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+.input{width:100%;min-height:48px;border-radius:12px;border:1px solid var(--line);background:rgba(0,0,0,.35);padding:0 13px;outline:none;font-size:16px}
+.input:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(34,230,255,.15)}
+.phonebox{display:flex;align-items:stretch;border:1px solid var(--line);border-radius:14px;background:rgba(0,0,0,.35);overflow:hidden}
+.phonebox span{display:grid;place-items:center;padding:0 14px;font-family:var(--display);font-weight:800;border-right:1px solid var(--line);color:var(--muted)}
+.phonebox input{flex:1;min-width:0;border:0;background:none;outline:none;font-family:var(--display);font-size:20px;letter-spacing:2px;padding:0 14px;min-height:58px}
+.otp{width:100%;text-align:center;font-family:var(--display);font-weight:900;font-size:34px;letter-spacing:22px;padding-left:22px;min-height:72px;border-radius:16px;border:1px solid var(--pink);background:rgba(0,0,0,.35);outline:none;box-shadow:0 0 22px rgba(255,43,214,.2)}
+#sheet{position:fixed;inset:0;z-index:50}
+.sheet-bg{position:absolute;inset:0;background:rgba(3,1,12,.72)}
+.sheet-body{position:absolute;left:0;right:0;bottom:0;margin:0 auto;max-width:560px;max-height:90vh;overflow:auto;background:linear-gradient(180deg,#1a0f45,#0d0828);border:1px solid var(--line);border-bottom:0;border-radius:24px 24px 0 0;padding:10px 18px calc(22px + env(safe-area-inset-bottom,0px));animation:up .22s ease-out}
+@keyframes up{from{transform:translateY(40px);opacity:0}}
+.grab{width:44px;height:5px;border-radius:9px;background:rgba(255,255,255,.2);margin:0 auto 14px}
+.sheet-body h3{font-family:var(--display);font-size:17px;margin-bottom:4px}
+.sheet-body .sub{color:var(--muted);font-size:13px;margin-bottom:16px}
+.stack{display:grid;gap:10px}
+.kv{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px}
+.kv span{color:var(--muted)}
+.kv b{text-align:right}
+.big-amt{font-family:var(--display);font-size:30px;font-weight:900;text-align:center;background:rgba(0,0,0,.3);border:1px solid rgba(255,178,62,.5);color:var(--sun);height:64px;border-radius:14px;width:100%;outline:none}
+.alert{border-radius:13px;padding:12px;font-size:14px;margin-bottom:14px;line-height:1.5}
+.alert.warn{background:rgba(255,138,61,.12);border:1px solid rgba(255,138,61,.55);color:#ffdcc6}
+.alert.ok{background:rgba(61,255,168,.08);border:1px solid rgba(61,255,168,.35);color:#c8ffe7}
+.alert.bad{background:rgba(255,61,110,.12);border:1px solid rgba(255,61,110,.55);color:#ffd0dc}
+.alert.gold{background:rgba(255,197,61,.1);border:1px solid rgba(255,197,61,.5);color:#ffecc0}
+.ext{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.ext .btn{min-height:58px;flex-direction:column;gap:2px;font-family:var(--display);font-size:16px}
+.ext .btn small{font-family:var(--body);font-size:11px;font-weight:500;color:var(--muted)}
+.ext .btn.clash{border-color:rgba(255,138,61,.55)}
+.ext .btn.clash small{color:var(--orange)}
+nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:8px 10px calc(8px + env(safe-area-inset-bottom,0px));background:rgba(9,5,30,.92);border-top:1px solid var(--line)}
+nav.tabs .in{max-width:760px;margin:0 auto;display:grid;grid-auto-flow:column;grid-auto-columns:1fr}
+nav.tabs button{background:none;border:0;display:flex;flex-direction:column;align-items:center;gap:4px;padding:6px 0;font-size:11px;font-weight:600;color:var(--dim);cursor:pointer}
+nav.tabs button svg{width:22px;height:22px}
+nav.tabs button.on{color:var(--pink)}
+#toast{position:fixed;left:50%;bottom:calc(92px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);opacity:0;z-index:60;background:#1b1049;border:1px solid var(--cyan);color:#fff;padding:11px 16px;border-radius:12px;font-size:14px;font-weight:600;transition:.25s;pointer-events:none;max-width:calc(100% - 32px);text-align:center}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+/* timeline */
+.tl{display:flex;border:1px solid var(--line);border-radius:var(--r);background:var(--panel);overflow:hidden}
+.tl-labels{flex:0 0 74px;border-right:1px solid var(--line);background:rgba(10,5,32,.6)}
+.tl-labels div{height:56px;display:flex;align-items:center;padding:0 10px;font-family:var(--display);font-size:11px;font-weight:800;border-bottom:1px solid var(--line)}
+.tl-labels div:first-child{height:30px;font-size:9px;color:var(--dim)}
+.tl-scroll{overflow-x:auto;flex:1;min-width:0}
+.tl-inner{position:relative}
+.tl-head{height:30px;position:relative;border-bottom:1px solid var(--line)}
+.tl-head span{position:absolute;top:8px;font-size:10px;color:var(--dim);transform:translateX(-50%);white-space:nowrap}
+.tl-row{height:56px;position:relative;border-bottom:1px solid var(--line);background-image:linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px)}
+.blk{position:absolute;top:8px;height:40px;border-radius:9px;padding:4px 8px;font-size:11px;font-weight:700;overflow:hidden;white-space:nowrap;line-height:1.25}
+.blk small{display:block;font-weight:500;opacity:.8;font-size:10px}
+.blk.a{background:linear-gradient(135deg,rgba(255,43,214,.55),rgba(139,92,246,.55));border:1px solid var(--pink)}
+.blk.b{background:rgba(34,230,255,.16);border:1px dashed var(--cyan);color:#c9f8ff}
+.blk.d{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:var(--muted)}
+.nowline{position:absolute;top:0;bottom:0;width:2px;background:var(--sun);box-shadow:0 0 10px var(--sun);z-index:2}
+.nowline::before{content:'NOW';position:absolute;top:2px;left:4px;font-size:9px;font-weight:800;color:var(--sun)}
+.list{display:grid;gap:10px}
+.li{display:flex;gap:12px;align-items:center}
+.li .t{font-family:var(--display);font-size:13px;font-weight:800;min-width:72px;color:var(--cyan);font-variant-numeric:tabular-nums}
+.li .m{flex:1;min-width:0}
+.li .m b{display:block}
+.li .acts{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.slots{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+@media(min-width:560px){.slots{grid-template-columns:repeat(5,1fr)}}
+.slot{min-height:56px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.04);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:700;font-size:14px}
+.slot small{font-size:10px;font-weight:600;color:var(--green)}
+.slot.low small{color:var(--orange)}
+.slot[disabled]{opacity:.3;cursor:not-allowed;text-decoration:line-through}
+.slot[disabled] small{color:var(--dim)}
+.slot.on{border-color:var(--sun);background:rgba(255,178,62,.15);box-shadow:0 0 14px rgba(255,178,62,.4)}
+.summary{padding:14px;border-radius:14px;background:rgba(255,178,62,.08);border:1px solid rgba(255,178,62,.4);margin:14px 0}
+.summary .tot{display:flex;justify-content:space-between;align-items:center;margin-top:8px;padding-top:10px;border-top:1px dashed rgba(255,178,62,.4)}
+.summary .tot b{font-family:var(--display);font-size:24px;color:var(--sun)}
+.ticket{margin:16px 0;text-align:left;border-radius:16px;border:1px dashed rgba(255,178,62,.6);padding:14px;background:rgba(0,0,0,.25)}
+.hbar{display:flex;height:14px;border-radius:9px;overflow:hidden;margin:10px 0 6px}
+.hbar i:first-child{background:var(--cyan)} .hbar i:last-child{background:var(--pink)}
+.legend{display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}
+.ut{display:grid;grid-template-columns:70px 1fr 50px;gap:10px;align-items:center;font-size:12px;margin:9px 0}
+.ut .track{height:10px;border-radius:9px;background:rgba(255,255,255,.07);overflow:hidden}
+.ut .track i{display:block;height:100%;background:linear-gradient(90deg,var(--purple),var(--pink))}
+.empty{text-align:center;color:var(--dim);padding:18px;font-size:14px}
+.stinput{display:flex;gap:8px;margin-bottom:8px}
+.mbadge{display:inline-block;font-size:11px;font-weight:800;color:var(--ink);background:linear-gradient(135deg,var(--gold1),var(--gold2));border-radius:8px;padding:3px 8px;margin-top:6px}
+/* ---- player side ---- */
+.auth{min-height:calc(100vh - 140px);display:flex;flex-direction:column;justify-content:center;gap:18px;padding-block:20px}
+.auth h1{font-family:var(--display);font-weight:900;font-size:30px;line-height:1.1;text-wrap:balance}
+.auth h1 span{color:var(--sun)}
+.auth p.lead{color:#d9d0ff;max-width:34ch;line-height:1.5}
+.demo-sms{display:flex;gap:10px;align-items:center;padding:12px 14px;border-radius:14px;background:rgba(34,230,255,.08);border:1px dashed var(--cyan);font-size:13px}
+.demo-sms b{font-family:var(--display);font-size:18px;letter-spacing:4px;color:var(--cyan)}
+.perks{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.perks div{padding:10px;border-radius:12px;border:1px solid var(--line);background:var(--panel);font-size:12px;color:var(--muted);line-height:1.35}
+.perks b{display:block;color:var(--text);font-size:13px;margin-bottom:2px}
+.hello{display:flex;align-items:center;gap:12px;margin:6px 0 16px}
+.avatar{flex:0 0 auto;width:48px;height:48px;border-radius:14px;display:grid;place-items:center;font-family:var(--display);font-weight:900;font-size:20px;background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff}
+body.elite .avatar{background:linear-gradient(135deg,var(--gold1),var(--gold2) 50%,var(--gold3));color:var(--ink)}
+.avatar.lg{width:72px;height:72px;font-size:30px;border-radius:20px}
+.hello h1{font-family:var(--display);font-size:20px;line-height:1.2}
+.elite-card{position:relative;border-radius:22px;padding:18px;overflow:hidden;color:var(--ink);
+  background:linear-gradient(125deg,#fff6d6 0%,#ffd76a 22%,#e9a72d 48%,#ffe08a 70%,#b9781a 100%);
+  box-shadow:0 0 0 1px rgba(255,230,160,.6),0 18px 40px rgba(255,170,40,.25)}
+.elite-card::after{content:'';position:absolute;inset:-40%;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.55) 50%,transparent 60%);animation:sheen 4.5s ease-in-out infinite}
+@keyframes sheen{0%,60%{transform:translateX(-60%)}100%{transform:translateX(60%)}}
+.elite-card .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;position:relative;z-index:1}
+.elite-card .brand{font-family:var(--display);font-weight:900;font-style:italic;font-size:13px;letter-spacing:1px}
+.elite-card .tier{font-family:var(--display);font-weight:900;font-size:24px;letter-spacing:3px;margin-top:2px}
+.elite-card .mid{display:flex;align-items:center;gap:16px;margin:14px 0 10px;position:relative;z-index:1}
+.ring{flex:0 0 auto;position:relative;width:104px;height:104px}
+.ring svg{width:104px;height:104px;transform:rotate(-90deg)}
+.ring .num{position:absolute;inset:0;display:grid;place-items:center;text-align:center;line-height:1}
+.ring .num b{display:block;font-family:var(--display);font-size:30px;font-weight:900}
+.ring .num small{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+.elite-card .facts{font-size:13px;line-height:1.6;font-weight:600;min-width:0}
+.elite-card .bottom{display:flex;justify-content:space-between;gap:10px;font-family:var(--display);font-size:11px;font-weight:800;letter-spacing:2px;position:relative;z-index:1;border-top:1px solid rgba(26,15,0,.25);padding-top:10px}
+.promo{border:1px solid rgba(255,197,61,.5);background:linear-gradient(135deg,rgba(255,197,61,.14),rgba(255,43,214,.1));border-radius:20px;padding:16px}
+.promo .pt{font-family:var(--display);font-weight:900;font-size:18px;color:var(--gold2)}
+.promo .price{font-family:var(--display);font-weight:900;font-size:28px;margin:6px 0}
+.promo .price small{font-family:var(--body);font-size:13px;font-weight:600;color:var(--muted)}
+.ticket-card{border-radius:18px;border:1px solid var(--cyan);background:linear-gradient(135deg,rgba(34,230,255,.12),rgba(139,92,246,.12));padding:16px;position:relative}
+.ticket-card .when{font-family:var(--display);font-weight:900;font-size:22px;margin:4px 0}
+.dots{display:flex;gap:6px;margin-top:8px}
+.dots i{width:28px;height:8px;border-radius:9px;background:rgba(255,255,255,.12)}
+.dots i.f{background:var(--green);box-shadow:0 0 8px var(--green)}
+.ratecard{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center}
+.ratecard div{border:1px solid var(--line);border-radius:12px;padding:10px 4px;background:var(--panel)}
+.ratecard b{display:block;font-family:var(--display);font-size:16px;font-variant-numeric:tabular-nums}
+.ratecard small{font-size:11px;color:var(--muted)}
+.progress{height:8px;border-radius:9px;background:rgba(255,255,255,.08);overflow:hidden;margin:8px 0}
+.progress i{display:block;height:100%;background:linear-gradient(90deg,var(--cyan),var(--pink))}
+.verified{color:var(--green);font-size:12px;font-weight:700}
+.wa-chat{background:#0b141a;border-radius:16px;padding:12px;border:1px solid #1f2c33;text-align:left}
+.wa-head{display:flex;align-items:center;gap:10px;padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #1f2c33}
+.wa-dp{width:34px;height:34px;border-radius:50%;background:radial-gradient(circle at 50% 40%,#ffb23e 0 22%,#ff2bd6 23% 46%,#2a1166 47% 100%);flex:0 0 auto}
+.wa-head b{display:block;font-size:14px;color:#e9edef}
+.wa-head small{font-size:11px;color:#8696a0}
+.wa-tick{color:#25d366}
+.wa-bubble{background:#202c33;color:#e9edef;border-radius:0 12px 12px 12px;padding:9px 11px 18px;font-size:13.5px;line-height:1.45;white-space:pre-wrap;position:relative;max-width:92%;word-break:break-word}
+.wa-bubble time{position:absolute;right:9px;bottom:4px;font-size:10px;color:#8696a0}
+.wa-note{font-size:11px;color:var(--dim);margin-top:8px;text-align:center}
+.sec{margin-top:4px}
+.chip.gsm{min-height:34px;font-size:12.5px;padding:0 11px}
+.st-row{display:flex;gap:8px;align-items:center;margin-bottom:10px}
+.st-row .input{flex:1;min-width:0}
+.st-row.off .input{opacity:.55}
+.linkbtn{background:none;border:0;color:var(--muted);text-decoration:underline;cursor:pointer;font-size:13px;padding:8px}
+</style>
+</head>
+<body>
+<div class="bgfx"></div><div class="grid"></div>
+<div class="app">
+  <header id="hdr"></header>
+  <main id="view"></main>
+</div>
+<nav class="tabs" id="nav" hidden><div class="in" id="navin"></div></nav>
+<div id="sheet" hidden></div>
+<div id="toast" role="status"></div>
+
+<script>
+const MIN = 60000, H = 3600000, DAY = 86400000, KEY = 'pxo_app_v2';
+const GAMES = ['FC 26','WWE 2K26','GTA V','Tekken 8','Spider-Man 2','Call of Duty','Mortal Kombat 1','NBA 2K26'];
+const DEFAULT_RATES = {1:99, 2:179, 3:249, 4:319}; // 3P & 4P are placeholders — confirm with owner
+const SHOP_ADDR = 'Shop 103, Siddharth Haven, Bypass Road, New Vavol, Gandhinagar';
+const ICONS = {
+  settings:'<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>',
+  home:'<path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>',
+  book:'<path d="M3 9a3 3 0 0 0 0 6v3a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-3a3 3 0 0 1 0-6V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z"/><path d="M13 5v2M13 11v2M13 17v2"/>',
+  games:'<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>',
+  me:'<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
+  live:'<path d="M6 11h4M8 9v4M15 12h.01M18 10h.01"/><path d="M17.3 5H6.7a4 4 0 0 0-4 3.6L2 15a3 3 0 0 0 5.2 2l1.5-1.6a2 2 0 0 1 1.4-.6h3.8a2 2 0 0 1 1.4.6l1.5 1.6A3 3 0 0 0 22 15l-.7-6.4A4 4 0 0 0 17.3 5z"/>',
+  schedule:'<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 14h4M8 18h8"/>',
+  players:'<path d="M12 2l3 6.3 6.9.9-5 4.8 1.2 6.9L12 17.8 5.9 21l1.2-6.9-5-4.8 6.9-.9z"/>',
+  report:'<path d="M3 3v18h18"/><path d="M8 17V11M13 17V7M18 17v-4"/>'
+};
+
+let S, mode = 'player', ptab = 'home', atab = 'live', meId = null, adminOk = false, F = {}, B, auth = {step:'phone', phone:'', code:'', err:''};
+const freshB = () => ({win:0, dur:60, players:2, slot:null, useMem:true, done:null, name:'', game:''});
+// Which games are installed on which PS5 (storage is limited, so each console has its own set).
+const SEED_GAMES = {s1:['FC 26','WWE 2K26','GTA V'], s2:['WWE 2K26','Tekken 8','Mortal Kombat 1'], s3:['FC 26','Call of Duty','Spider-Man 2'], s4:['GTA V','NBA 2K26','FC 26','Tekken 8']};
+B = freshB();
+
+/* ---------- utils ---------- */
+const $ = id => document.getElementById(id);
+const ls = { get(k){ try { return localStorage.getItem(k); } catch(e){ return null; } }, set(k,v){ try { localStorage.setItem(k,v); } catch(e){} }, del(k){ try { localStorage.removeItem(k); } catch(e){} } };
+const uid = () => Math.random().toString(36).slice(2, 8).toUpperCase();
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const q = v => typeof v === 'number' ? v : `'${String(v).replace(/\\/g,'\\\\').replace(/'/g, "\\'")}'`;
+const money = n => '₹' + Math.round(n).toLocaleString('en-IN');
+const fmtT = t => new Date(t).toLocaleTimeString('en-US', {hour:'numeric', minute:'2-digit'});
+const fmtDay = t => new Date(t).toLocaleDateString('en-IN', {weekday:'short', day:'numeric', month:'short'});
+const fmtDate = t => new Date(t).toLocaleDateString('en-IN', {day:'numeric', month:'short', year:'numeric'});
+const pad = n => String(n).padStart(2, '0');
+function fmtClock(ms){ const s = Math.floor(ms/1000), h = Math.floor(s/3600), m = Math.floor(s%3600/60), x = s%60; return h ? `${h}:${pad(m)}:${pad(x)}` : `${pad(m)}:${pad(x)}`; }
+function fmtMin(m){ m = Math.round(m); const h = Math.floor(m/60), r = m%60; return h ? (r ? `${h}h ${r}m` : `${h}h`) : `${r} min`; }
+function relIn(t){ const d = Math.round((t - Date.now())/MIN); if (d <= 0) return d < -1 ? `${-d} min late` : 'now'; return 'in ' + fmtMin(d); }
+const stName = id => (S.stations.find(x => x.id === id) || {}).name || '—';
+const ph10 = p => String(p || '').replace(/\D/g, '').slice(-10);
+const waLink = (num, msg) => `https://wa.me/91${ph10(num)}?text=${encodeURIComponent(msg)}`;
+const icon = k => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${ICONS[k]}</svg>`;
+
+/* ---------- users & membership ---------- */
+const userByPhone = p => S.users.find(u => u.phone === ph10(p));
+const userById = id => id && S.users.find(u => u.id === id);
+const me = () => userById(meId);
+const hoursLeft = u => u ? Math.floor((u.mins || 0)/60) : 0;
+const isMember = u => !!(u && u.memberSince);
+const firstName = u => (u && u.name ? u.name.split(' ')[0] : '');
+const callName = u => u ? (firstName(u) || 'Player') : 'Player';
+function profilePct(u){ const f = [u.phone, u.name, u.email, u.dob]; return Math.round(f.filter(Boolean).length / f.length * 100); }
+
+/* ---------- WhatsApp confirmations ----------
+   Demo: messages are logged and shown as a preview, and staff can open them in WhatsApp.
+   Live version: sent automatically from the game zone's WhatsApp Business number. */
+function queueMsg(phone, name, text, kind){
+  const p = ph10(phone); if (p.length !== 10) return null;
+  const m = {id:uid(), to:p, name:name || '', text, kind, at:Date.now()};
+  S.outbox = [m, ...(S.outbox || [])].slice(0, 60); return m;
+}
+function bookingMsg(k){
+  const u = userById(k.userId), sp = memberSplit(u, k.players, (k.end - k.start)/MIN, k.useMem);
+  return `✅ Booking confirmed\n\nHi ${(k.name || '').split(' ')[0] || 'there'}! Your slot at Portal XO is locked 🎮\n\n📅 ${fmtDay(k.start)}\n⏰ ${fmtT(k.start)} – ${fmtT(k.end)}\n🕹️ ${stName(k.stationId)} · ${k.players} player${k.players > 1 ? 's' : ''}${k.game ? `\n🎮 ${k.game} is installed and ready` : ''}${sp.cov ? `\n⭐ ${sp.cov}h from your Elite Pass` : ''}\n💰 Pay at counter: ${money(sp.pay)}\n🔖 Ref: PXO-${k.id}\n\n📍 ${SHOP_ADDR}\nNeed to change it? Just reply here.`;
+}
+function sessionMsg(s){
+  return `🎮 Game on!\n\nHi ${(s.name || '').split(' ')[0] || 'there'}, your session has started at Portal XO.\n\n🕹️ ${stName(s.stationId)} · ${s.players} player${s.players > 1 ? 's' : ''}${s.game ? `\n🎮 ${s.game}` : ''}\n⏰ ${fmtT(s.start)} – ${fmtT(s.end)}\n\nWant more time? Ask at the counter before it ends.`;
+}
+function waPreview(m, note){
+  if (!m) return '';
+  return `<div class="wa-chat"><div class="wa-head"><div class="wa-dp"></div><div><b>Portal XO Game Zone <span class="wa-tick">✔</span></b><small>WhatsApp · to +91 ${m.to.slice(0,5)} ${m.to.slice(5)}</small></div></div>
+    <div class="wa-bubble">${esc(m.text)}<time>${fmtT(m.at)}</time></div></div>${note === false ? '' : `<div class="wa-note">${note || 'Demo preview. The live app sends this automatically from Portal XO\'s WhatsApp.'}</div>`}`;
+}
+function ensureUser(phone, name, source){
+  const p = ph10(phone); if (p.length !== 10) return null;
+  let u = userByPhone(p);
+  if (!u){ u = {id:uid(), phone:p, name:name || '', tag:'', dob:'', area:'', email:'', games:[], mins:0, total:0, memberSince:null, createdAt:Date.now(), source:source || 'app', verified:false}; S.users.push(u); }
+  else if (name && !u.name) u.name = name;
+  return u;
+}
+
+/* ---------- pricing ---------- */
+const rateFor = p => +S.settings.rates[p] || +S.settings.rates[1] || 99;
+const priceFor = (players, mins) => rateFor(players) * Math.ceil(mins/60);
+// Member's hours cover the member; friends pay the difference between the group rate and the solo rate.
+function memberSplit(u, players, mins, use){
+  const hrs = Math.ceil(mins/60), cov = (use && isMember(u)) ? Math.min(hrs, hoursLeft(u)) : 0, unc = hrs - cov;
+  const share = rateFor(players) - rateFor(1);
+  return {hrs, cov, unc, share, pay: cov*share + unc*rateFor(players), full: hrs*rateFor(players)};
+}
+
+/* ---------- storage & seed ---------- */
+function save(){ ls.set(KEY, JSON.stringify(S)); }
+function load(){ try { const r = ls.get(KEY); if (r) return JSON.parse(r); } catch(e){} return null; }
+function seed(){
+  const now = Date.now(), r5 = t => Math.round(t/(5*MIN))*5*MIN;
+  const st = [1,2,3,4].map(i => ({id:'s'+i, name:'PS5 · ' + pad(i), games:[...SEED_GAMES['s'+i]]}));
+  const U = (phone, name, tag, extra) => Object.assign({id:uid(), phone, name, tag, dob:'', area:'Vavol', email:'', games:[], mins:0, total:0, memberSince:null, createdAt:now - 20*DAY, source:'app', verified:true}, extra);
+  const aryan = U('9898000001','Aryan Patel','AryanX',{games:['FC 26','Tekken 8'], mins:480, total:720, memberSince:now - 6*DAY, dob:'2004-03-14'});
+  const kunal = U('9898000002','Kunal Shah','KunalOP',{games:['WWE 2K26'], mins:660, total:720, memberSince:now - 2*DAY});
+  const rahul = U('9898000003','Rahul Desai','',{games:['GTA V']});
+  const done = (sid, name, players, game, agoStart, mins, amount, method, userId, memUsed) => ({id:uid(), stationId:sid, name, phone:'', players, game, start:r5(now-agoStart*MIN), end:r5(now-agoStart*MIN+mins*MIN), endedAt:r5(now-agoStart*MIN+mins*MIN), status:'done', amount, method, billMin:mins, userId:userId || null, memberUsed:memUsed || 0});
+  return {
+    settings:{rates:{...DEFAULT_RATES}, pass:999, wa:'7574090807', open:'10:30', close:'01:00', admin:{id:'admin', pass:'portal123'}},
+    outbox: [],
+    games: [...GAMES],
+    stations: st,
+    users: [aryan, kunal, rahul],
+    sessions: [
+      {id:uid(), stationId:'s1', name:'Yash', phone:'', players:2, game:'FC 26', start:r5(now-40*MIN), end:r5(now+20*MIN), status:'active'},
+      {id:uid(), stationId:'s2', name:'Kunal Shah', phone:kunal.phone, players:4, game:'WWE 2K26', start:r5(now-45*MIN), end:r5(now+75*MIN), status:'active', userId:kunal.id, useMem:true},
+      done('s1','Harsh',2,'Tekken 8',300,60,179,'UPI'),
+      done('s3','Priyansh',4,'WWE 2K26',260,120,638,'Cash'),
+      done('s4','Aryan Patel',1,'FC 26',200,120,0,'UPI',aryan.id,120),
+      done('s2','Rudra',3,'FC 26',170,60,249,'Cash'),
+      done('s3','Nirav',2,'Call of Duty',120,120,358,'UPI'),
+      {id:uid(), kind:'membership', stationId:null, name:'Kunal Shah', userId:kunal.id, players:1, start:now-2*DAY, end:now-2*DAY, endedAt:now-2*DAY, status:'done', amount:999, method:'UPI', billMin:0}
+    ],
+    bookings: [
+      {id:uid(), stationId:'s1', name:'Rahul Desai', phone:rahul.phone, userId:rahul.id, players:4, game:'GTA V', start:r5(now+30*MIN), end:r5(now+90*MIN), status:'upcoming', source:'app'},
+      {id:uid(), stationId:'s3', name:'Aryan Patel', phone:aryan.phone, userId:aryan.id, players:2, game:'FC 26', start:r5(now+10*MIN), end:r5(now+70*MIN), status:'upcoming', source:'app', useMem:true},
+      {id:uid(), stationId:'s4', name:'Dev', phone:'', players:3, game:'NBA 2K26', start:r5(now+150*MIN), end:r5(now+270*MIN), status:'upcoming', source:'call'},
+    ]
+  };
+}
+
+/* ---------- availability engine ---------- */
+const activeOn = id => S.sessions.find(s => s.status === 'active' && s.stationId === id);
+function occupied(stationId, a, b, ignore){
+  const now = Date.now();
+  for (const s of S.sessions) if (s.status === 'active' && s.stationId === stationId && s.id !== ignore){
+    const e = Math.max(s.end, now); if (a < e && b > s.start) return {type:'session', item:s};
+  }
+  const ks = S.bookings.filter(k => k.status === 'upcoming' && k.stationId === stationId && k.id !== ignore && a < k.end && b > k.start).sort((x,y) => x.start - y.start);
+  return ks.length ? {type:'booking', item:ks[0]} : null;
+}
+const hasGame = (st, g) => !g || (st.games || []).includes(g);
+const freeStations = (a, b, ignore, g) => S.stations.filter(st => !st.off && hasGame(st, g) && !occupied(st.id, a, b, ignore));
+const allGames = () => S.games || [];
+const playableGames = () => allGames().filter(g => S.stations.some(st => !st.off && hasGame(st, g)));
+const gameLine = g => g ? ` · 🎮 ${esc(g)}` : '';
+const liveStations = () => S.stations.filter(st => !st.off);
+const nextBooking = (stationId, t) => S.bookings.filter(k => k.status === 'upcoming' && k.stationId === stationId && k.end > t).sort((a,b) => a.start - b.start)[0];
+function bizStart(){ const d = new Date(); if (d.getHours() < 5) d.setDate(d.getDate()-1); d.setHours(5,0,0,0); return +d; }
+const todayDone = () => S.sessions.filter(s => s.status === 'done' && s.endedAt >= bizStart());
+function windows(){
+  const now = new Date(), res = [];
+  const [oh, om] = S.settings.open.split(':').map(Number), [ch, cm] = S.settings.close.split(':').map(Number);
+  for (let d = -1; res.length < 3 && d < 7; d++){
+    const st = new Date(now.getFullYear(), now.getMonth(), now.getDate() + d, oh, om);
+    const en = new Date(now.getFullYear(), now.getMonth(), now.getDate() + d + ((ch*60 + cm) <= (oh*60 + om) ? 1 : 0), ch, cm);
+    if (+en > +now + 30*MIN) res.push({start:+st, end:+en, label: res.length === 0 ? (d === -1 ? 'Tonight' : 'Today') : res.length === 1 ? 'Tomorrow' : fmtDay(+st)});
+  }
+  return res;
+}
+
+/* ---------- shell ---------- */
+function render(){
+  const u = me();
+  document.body.classList.toggle('elite', mode === 'player' && isMember(u));
+  renderHeader();
+  if (mode === 'admin' && !adminOk){
+    setNav(null); $('view').innerHTML = viewAdminLogin();
+  } else if (mode === 'admin'){
+    setNav([['live','Live'],['schedule','Schedule'],['players','Players'],['report','Report'],['settings','Settings']], atab, 'goA');
+    $('view').innerHTML = ({live:viewLive, schedule:viewSchedule, players:viewPlayers, report:viewReport, settings:viewSettings})[atab]();
+    if (atab === 'schedule'){ const sc = document.querySelector('.tl-scroll'), nl = document.querySelector('.nowline'); if (sc && nl) sc.scrollLeft = Math.max(0, nl.offsetLeft - 70); }
+    if (atab === 'players') renderPlayerList();
+  } else if (!u){
+    setNav(null); $('view').innerHTML = auth.step === 'otp' ? viewOtp() : viewPhone();
+  } else if (auth.step === 'profile'){
+    setNav(null); $('view').innerHTML = viewProfileSetup();
+  } else {
+    setNav([['home','Home'],['book','Book'],['games','Bookings'],['me','Profile']], ptab, 'goP');
+    $('view').innerHTML = ({home:pHome, book:pBook, games:pGames, me:pProfile})[ptab]();
+  }
+  tick();
+}
+function setNav(items, cur, fn){
+  if (!items){ $('nav').hidden = true; return; }
+  $('nav').hidden = false;
+  const ic = {home:'home', book:'book', games:'games', me:'me', live:'live', schedule:'schedule', players:'players', report:'report', settings:'settings'};
+  $('navin').innerHTML = items.map(([k,l]) => `<button class="${k === cur ? 'on' : ''}" onclick="${fn}('${k}')">${icon(ic[k])}${l}</button>`).join('');
+}
+function renderHeader(){
+  const u = me();
+  let right = '';
+  if (mode === 'admin' && adminOk){
+    right = `<span class="rolepill">ADMIN</span><div class="clock" id="clock"></div>`;
+  } else if (mode === 'admin'){
+    right = `<span class="rolepill">STAFF</span>`;
+  } else if (u && auth.step !== 'profile'){
+    right = isMember(u) ? `<span class="hrschip">⭐ ${hoursLeft(u)}h</span>` : `<span class="muted small">${money(rateFor(1))}/hr</span>`;
+  }
+  $('hdr').innerHTML = `<div class="logo"><div class="orb"></div><div><b>PORTAL XO</b><span>${mode === 'admin' ? 'COUNTER' : 'GAME ZONE'}</span></div></div><div class="hright">${right}</div>`;
+}
+function goA(t){ atab = t; render(); window.scrollTo({top:0}); }
+function goP(t){ ptab = t; if (t === 'book' && B.done) B = freshB(); render(); window.scrollTo({top:0}); }
+function tick(){
+  const now = Date.now(), c = $('clock');
+  if (c) c.innerHTML = `${fmtT(now)}<small>${fmtDay(now).toUpperCase()}</small>`;
+  document.querySelectorAll('[data-cd]').forEach(el => {
+    const end = +el.dataset.cd, rem = end - now;
+    el.textContent = rem >= 0 ? fmtClock(rem) : '+' + fmtClock(-rem);
+    const card = el.closest('.station'); if (!card) return;
+    const cls = rem < 0 ? 'over' : rem < 10*MIN ? 'soon' : 'playing';
+    card.classList.remove('over','soon','playing'); card.classList.add(cls);
+    const p = card.querySelector('[data-pill]'); if (p){ p.className = 'pill ' + cls; p.textContent = {over:'Overtime', soon:'Ending soon', playing:'Playing'}[cls]; }
+  });
+  document.querySelectorAll('[data-pg]').forEach(el => { const s = +el.dataset.s, e = +el.dataset.e; el.style.width = Math.min(100, Math.max(0, (now - s)/(e - s)*100)) + '%'; });
+}
+function openSheet(html){ $('sheet').innerHTML = `<div class="sheet-bg" onclick="closeSheet()"></div><div class="sheet-body"><div class="grab"></div>${html}</div>`; $('sheet').hidden = false; }
+function closeSheet(){ $('sheet').hidden = true; $('sheet').innerHTML = ''; }
+function toast(t){ const el = $('toast'); el.textContent = t; el.classList.add('on'); clearTimeout(toast._t); toast._t = setTimeout(() => el.classList.remove('on'), 2800); }
+function chips(key, opts, cur, fn='pickF'){ return `<div class="chips">${opts.map(o => `<button class="chip ${o.v === cur ? 'on' : ''}" onclick="${fn}(this,'${key}',${q(o.v)})">${o.l}</button>`).join('')}</div>`; }
+function pickF(el, key, val){ F[key] = val; el.parentElement.querySelectorAll('.chip').forEach(c => c.classList.remove('on')); el.classList.add('on'); }
+function multiChips(key, opts){ return `<div class="chips">${opts.map(o => `<button class="chip ${(F[key]||[]).includes(o) ? 'on' : ''}" onclick="toggleMulti(this,'${key}',${q(o)})">${esc(o)}</button>`).join('')}</div>`; }
+function toggleMulti(el, key, val){ F[key] = F[key] || []; const i = F[key].indexOf(val); if (i > -1) F[key].splice(i,1); else F[key].push(val); el.classList.toggle('on'); }
+
+/* =====================================================================
+   PLAYER SIDE
+   ===================================================================== */
+function viewPhone(){
+  return `<div class="auth">
+    <div><h1>Book your <span>PS5 slot</span> in 30 seconds</h1>
+    <p class="lead" style="margin-top:10px">No account, no password. Just verify your number and you're in.</p></div>
+    <div class="perks"><div><b>Live slots</b>See what's free right now</div><div><b>No clashes</b>Your slot stays yours</div><div><b>WhatsApp</b>Confirmation on every booking</div></div>
+    <div><label class="lbl" for="aPhone">Mobile number</label>
+    <div class="phonebox"><span>+91</span><input id="aPhone" inputmode="numeric" autocomplete="tel-national" maxlength="10" placeholder="98765 43210" value="${esc(auth.phone)}" onkeydown="if(event.key==='Enter')sendOtp()"></div>
+    ${auth.err ? `<div class="alert bad" style="margin:10px 0 0">${esc(auth.err)}</div>` : ''}</div>
+    <button class="btn primary wide" style="min-height:54px;font-size:16px" onclick="sendOtp()">Get OTP</button>
+    <div class="muted small" style="text-align:center">Try a member: 98980 00001 &nbsp;·&nbsp; or any new number</div>
+  </div>`;
+}
+function sendOtp(){
+  const p = ph10($('aPhone').value);
+  if (p.length !== 10 || !/^[6-9]/.test(p)){ auth.err = 'Enter a valid 10-digit Indian mobile number.'; auth.phone = $('aPhone').value; return render(); }
+  auth = {step:'otp', phone:p, code:String(Math.floor(1000 + Math.random()*9000)), err:'', sentAt:Date.now()};
+  render(); setTimeout(() => $('aOtp') && $('aOtp').focus(), 50);
+}
+function viewOtp(){
+  return `<div class="auth">
+    <div><h1>Enter the <span>code</span></h1>
+    <p class="lead" style="margin-top:10px">Sent by SMS to +91 ${auth.phone.slice(0,5)} ${auth.phone.slice(5)}.</p></div>
+    <div class="demo-sms">💬 <div>Demo SMS · Portal XO code is <b>${auth.code}</b></div></div>
+    <input id="aOtp" class="otp" inputmode="numeric" autocomplete="one-time-code" maxlength="4" placeholder="····" oninput="if(this.value.replace(/\\D/g,'').length===4)verifyOtp()">
+    ${auth.err ? `<div class="alert bad">${esc(auth.err)}</div>` : ''}
+    <button class="btn primary wide" style="min-height:54px;font-size:16px" onclick="verifyOtp()">Verify & continue</button>
+    <div style="display:flex;justify-content:space-between"><button class="linkbtn" onclick="auth.step='phone';auth.err='';render()">Change number</button><button class="linkbtn" onclick="auth.code=String(Math.floor(1000+Math.random()*9000));auth.err='';render();toast('New code sent')">Resend code</button></div>
+  </div>`;
+}
+function verifyOtp(){
+  const v = ($('aOtp').value || '').replace(/\D/g, '');
+  if (v !== auth.code){ auth.err = 'That code doesn\'t match. Check the SMS and try again.'; render(); return; }
+  const u = ensureUser(auth.phone, '', 'app'); u.verified = true;
+  meId = u.id; ls.set('pxo_me', meId);
+  auth = {step: u.name ? 'app' : 'profile', phone:'', code:'', err:''};
+  F = {};
+  ptab = 'home'; save(); render(); window.scrollTo({top:0});
+  toast(u.name ? `Welcome back, ${callName(u)} 🎮` : 'Number verified ✓');
+}
+function profileFields(u){
+  return `<div class="field"><label for="pName">Full name *</label><input class="input" id="pName" value="${esc(u.name)}" placeholder="Your name" autocomplete="name"></div>
+    <div class="field"><label for="pPhone">Phone number</label><input class="input" id="pPhone" value="+91 ${u.phone}" disabled><div class="verified" style="margin-top:6px">✓ Verified by OTP. Booking confirmations come here on WhatsApp.</div></div>
+    <div class="field"><label for="pEmail">Email ID</label><input class="input" id="pEmail" type="email" value="${esc(u.email)}" placeholder="you@example.com" autocomplete="email"></div>
+    <div class="field"><label for="pDob">Birthdate</label><input class="input" id="pDob" type="date" value="${esc(u.dob)}"><div class="muted small" style="margin-top:6px">🎂 We send you a birthday offer.</div></div>`;
+}
+function viewProfileSetup(){
+  const u = me();
+  return `<div style="padding-block:10px 20px">
+    <div class="hello"><div class="avatar">✓</div><div><span class="verified">+91 ${u.phone} verified</span><h1>Set up your player profile</h1></div></div>
+    <p class="muted" style="margin-bottom:18px;line-height:1.5">Takes 20 seconds. We use it for your bookings and birthday offers.</p>
+    ${profileFields(u)}
+    <div class="stack"><button class="btn primary wide" onclick="saveProfile(true)">Save & start playing</button>
+    <button class="btn ghost wide" onclick="auth.step='app';render()">Skip for now</button></div></div>`;
+}
+function saveProfile(fromSetup){
+  const u = me(), name = $('pName').value.trim();
+  if (!name){ toast('Add your name so the counter knows who you are'); $('pName').focus(); return; }
+  const email = $('pEmail').value.trim();
+  if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ toast('That email doesn\'t look right. Check it or leave it empty.'); return; }
+  Object.assign(u, {name, dob:$('pDob').value, email});
+  save(); auth.step = 'app'; if (fromSetup) ptab = 'home'; F.editing = false; render(); window.scrollTo({top:0}); toast('Profile saved');
+}
+function eliteCard(u){
+  const left = u.mins || 0, total = Math.max(u.total || 720, left), pct = total ? left/total : 0, C = 2*Math.PI*44;
+  return `<div class="elite-card">
+    <div class="top"><div><div class="brand">PORTAL XO</div><div class="tier">ELITE PASS</div></div><span class="pill" style="border-color:rgba(26,15,0,.4);color:var(--ink)">Active</span></div>
+    <div class="mid">
+      <div class="ring"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="44" fill="none" stroke="rgba(26,15,0,.18)" stroke-width="9"/><circle cx="50" cy="50" r="44" fill="none" stroke="#1a0f00" stroke-width="9" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C*(1-pct)}"/></svg>
+        <div class="num"><div><b>${Math.floor(left/60)}h</b><small>${left % 60 ? (left % 60) + 'm · ' : ''}left</small></div></div></div>
+      <div class="facts">${fmtMin(total - left)} played of ${fmtMin(total)}<br>Hours never expire<br>Use anytime, any station</div>
+    </div>
+    <div class="bottom"><span>${esc((u.name || 'PLAYER').toUpperCase())}</span><span>SINCE ${new Date(u.memberSince).toLocaleDateString('en-IN',{month:'short', year:'numeric'}).toUpperCase()}</span></div>
+  </div>`;
+}
+function myUpcoming(){ const now = Date.now(); return S.bookings.filter(k => k.userId === meId && k.status === 'upcoming' && k.end > now).sort((a,b) => a.start - b.start); }
+function pHome(){
+  const u = me(), now = Date.now(), nb = myUpcoming()[0], freeNow = freeStations(now, now + H).map(s => s.id), pct = profilePct(u);
+  const playing = S.sessions.find(s => s.status === 'active' && s.userId === meId);
+  return `<div class="hello"><div class="avatar">${esc((callName(u)[0] || 'P').toUpperCase())}</div><div><div class="muted small">${isMember(u) ? '⭐ Elite member' : 'Welcome back'}</div><h1>Hey, ${esc(callName(u))}</h1></div></div>
+  ${isMember(u) ? eliteCard(u) : `<div class="promo"><div class="pt">⭐ ELITE PASS</div><div class="price">${money(S.settings.pass)} <small>for 12 hours of play</small></div>
+    <div class="muted small" style="line-height:1.5;margin-bottom:12px">Hours never expire. Book with your pass and pay ${money(0)} when you play solo. Bring friends and they pay only the difference.</div>
+    <a class="btn gold wide" target="_blank" rel="noopener" href="${waLink(S.settings.wa, `Hi Portal XO! I want the ${money(S.settings.pass)} Elite Pass (12 hours). My number: ${u.phone}`)}">Get Elite Pass</a></div>`}
+  ${playing ? `<h2>Playing <em>now</em></h2><div class="card station playing"><div class="st-top"><div class="st-name">${esc(stName(playing.stationId))}</div><span class="pill playing" data-pill>Playing</span></div><div class="timer" data-cd="${playing.end}">--:--</div><div class="muted small">Ends ${fmtT(playing.end)}</div></div>` : ''}
+  <h2>Your <em>next game</em></h2>
+  ${nb ? `<div class="ticket-card"><div class="muted small">${fmtDay(nb.start)} · ${esc(stName(nb.stationId))}</div><div class="when">${fmtT(nb.start)} – ${fmtT(nb.end)}</div>
+    <div class="small">${nb.players} player${nb.players > 1 ? 's' : ''} · starts ${relIn(nb.start)}${nb.useMem && isMember(u) ? ' · <b style="color:var(--gold2)">using Elite hours</b>' : ''}</div></div>`
+    : `<div class="card" style="text-align:center"><div class="muted" style="margin-bottom:12px">No game booked yet.</div><button class="btn primary wide" onclick="goP('book')">Book a slot</button></div>`}
+  ${pct < 100 ? `<h2>Finish your <em>profile</em></h2><div class="card"><div style="display:flex;justify-content:space-between"><b>${pct}% complete</b><span class="muted small">Unlock birthday offers</span></div><div class="progress"><i style="width:${pct}%"></i></div><button class="btn wide" style="margin-top:6px" onclick="F={editing:true};goP('me')">Complete profile</button></div>` : ''}
+  <h2>Right <em>now</em></h2>
+  <div class="card"><b>${freeNow.length} of ${S.stations.length} stations free</b> <span class="muted small">for the next hour</span>
+    <div class="dots">${S.stations.map(s => `<i class="${freeNow.includes(s.id) ? 'f' : ''}" title="${esc(s.name)}"></i>`).join('')}</div>
+    ${freeNow.length ? `<button class="btn primary wide" style="margin-top:12px" onclick="goP('book')">Grab a slot</button>` : ''}</div>
+  <h2>Rates <em>per hour</em></h2>
+  <div class="ratecard">${[1,2,3,4].map(p => `<div><b>${money(rateFor(p))}</b><small>${p} player${p > 1 ? 's' : ''}</small></div>`).join('')}</div>
+  <p class="muted small" style="margin-top:10px">Open ${S.settings.open} to ${S.settings.close} · ${SHOP_ADDR}</p>`;
+}
+function pickB(el, key, val){ B[key] = val; if (key === 'win' || key === 'dur' || key === 'game') B.slot = null; render(); }
+function pBook(){
+  const u = me();
+  if (B.done) return pBookDone();
+  const W = windows(); if (B.win >= W.length) B.win = 0; const w = W[B.win], now = Date.now();
+  let slots = '';
+  for (let t = w.start; t + B.dur*MIN <= w.end; t += 30*MIN){
+    const free = t < now + 5*MIN ? 0 : freeStations(t, t + B.dur*MIN, null, B.game).length;
+    slots += `<button class="slot ${B.slot === t ? 'on' : ''} ${free === 1 ? 'low' : ''}" ${free ? '' : 'disabled'} onclick="pickB(this,'slot',${t})">${fmtT(t)}<small>${free ? (free === 1 ? '1 left' : free + ' free') : 'full'}</small></button>`;
+  }
+  const sp = memberSplit(u, B.players, B.dur, B.useMem);
+  let n = 0; const step = t => `<h2${n ? '' : ' style="margin-top:6px"'}>${++n}. <em>${t}</em></h2>`;
+  const memberBlock = isMember(u) ? `${step('Elite hours')}
+    <div class="alert gold">You have <b>${hoursLeft(u)}h</b> on your Elite Pass.</div>
+    ${chips('useMem', [{v:true, l:'⭐ Use my hours'}, {v:false, l:'Pay full price'}], B.useMem, 'pickB')}` : '';
+  const pg = playableGames(); if (B.game && !pg.includes(B.game)) B.game = '';
+  const gameCount = g => S.stations.filter(st => !st.off && hasGame(st, g)).length;
+  return `${step('Day')}${chips('win', W.map((x,i) => ({v:i, l:x.label})), B.win, 'pickB')}
+  ${step('Game')}${chips('game', [{v:'', l:'Any game'}, ...pg.map(g => ({v:g, l:esc(g)}))], B.game, 'pickB')}
+  <div class="muted small" style="margin-top:8px">${B.game ? `${esc(B.game)} is on ${gameCount(B.game)} of ${liveStations().length} PS5s. We'll seat you on one of them.` : 'Not sure yet? Pick "Any game" and switch games on the PS5 anytime.'}</div>
+  ${step('Players')}${chips('players', [1,2,3,4].map(v => ({v, l:`${v}P · ${money(rateFor(v))}/hr`})), B.players, 'pickB')}
+  ${step('How long')}${chips('dur', [{v:60,l:'1 hour'},{v:120,l:'2 hours'},{v:180,l:'3 hours'},{v:240,l:'4 hours'}], B.dur, 'pickB')}
+  ${memberBlock}
+  ${step('Pick a time')}<div class="slots">${slots || '<div class="empty">No slots left</div>'}</div>
+  ${B.slot ? `<div class="summary">
+    <div class="kv" style="border:0;padding:2px 0"><span>${fmtDay(B.slot)}</span><b>${fmtT(B.slot)} – ${fmtT(B.slot + B.dur*MIN)}</b></div>
+    ${B.game ? `<div class="kv" style="border:0;padding:2px 0"><span>Game</span><b>🎮 ${esc(B.game)}</b></div>` : ''}
+    <div class="kv" style="border:0;padding:2px 0"><span>${sp.hrs}h × ${money(rateFor(B.players))} (${B.players}P)</span><b>${money(sp.full)}</b></div>
+    ${sp.cov ? `<div class="kv" style="border:0;padding:2px 0"><span>⭐ ${sp.cov}h from Elite Pass</span><b style="color:var(--gold2)">− ${money(sp.full - sp.pay)}</b></div>` : ''}
+    <div class="tot"><span>${sp.cov && B.players > 1 ? 'Friends pay at counter' : 'Pay at counter'}</span><b>${money(sp.pay)}</b></div></div>
+  ${!u.name ? `<div class="field"><label for="bName">Your name</label><input class="input" id="bName" placeholder="Name for the booking"></div>` : ''}
+  <button class="btn primary wide" style="min-height:54px;font-size:16px" onclick="confirmBooking()">Confirm booking</button>` : ''}`;
+}
+function confirmBooking(){
+  const u = me();
+  if (!u.name){ const n = ($('bName') || {}).value?.trim(); if (!n){ toast('Add your name for the booking'); return; } u.name = n; }
+  const a = B.slot, b = a + B.dur*MIN, free = freeStations(a, b, null, B.game);
+  if (!free.length){ B.slot = null; render(); toast('That slot just filled up. Pick another time.'); return; }
+  const k = {id:uid(), stationId:free[0].id, name:u.name, phone:u.phone, userId:u.id, players:B.players, game:B.game, start:a, end:b, status:'upcoming', source:'app', useMem: isMember(u) && B.useMem};
+  S.bookings.push(k); const m = queueMsg(u.phone, u.name, bookingMsg(k), 'booking'); k.msgId = m && m.id; save(); B.done = k.id; render(); window.scrollTo({top:0});
+}
+function pBookDone(){
+  const k = S.bookings.find(x => x.id === B.done), u = me();
+  if (!k){ B = freshB(); return pBook(); }
+  const sp = memberSplit(u, k.players, (k.end - k.start)/MIN, k.useMem);
+  const m = (S.outbox || []).find(x => x.id === k.msgId);
+  return `<div class="card" style="text-align:center;padding:26px 18px;margin-top:6px"><div style="font-size:44px">🎮</div><h2 style="margin:8px 0 4px">Slot <em>locked</em></h2><div class="muted">Your station is reserved. Nobody else can book it.</div>
+    <div class="ticket"><div class="kv"><span>Ref</span><b>PXO-${k.id}</b></div><div class="kv"><span>Date</span><b>${fmtDay(k.start)}</b></div>
+    <div class="kv"><span>Time</span><b>${fmtT(k.start)} – ${fmtT(k.end)}</b></div><div class="kv"><span>Station</span><b>${esc(stName(k.stationId))}</b></div>
+    ${k.game ? `<div class="kv"><span>Game</span><b>🎮 ${esc(k.game)}</b></div>` : ''}
+    ${sp.cov ? `<div class="kv"><span>Elite hours used</span><b style="color:var(--gold2)">${sp.cov}h</b></div>` : ''}
+    <div class="kv" style="border:0"><span>Pay at counter</span><b style="color:var(--sun)">${money(sp.pay)}</b></div></div>
+    <div class="lbl" style="text-align:left;margin-top:4px">Confirmation on your WhatsApp</div>${waPreview(m)}
+    <div class="stack" style="margin-top:14px"><button class="btn primary wide" onclick="goP('games')">See my bookings</button></div></div>`;
+}
+function pGames(){
+  const up = myUpcoming(), past = S.sessions.filter(s => s.userId === meId && s.status === 'done' && s.kind !== 'membership').sort((a,b) => b.endedAt - a.endedAt);
+  return `<h2 style="margin-top:6px">Upcoming</h2>
+  <div class="list">${up.length ? up.map(k => `<div class="card li"><div class="t">${fmtT(k.start)}</div>
+    <div class="m"><b>${fmtDay(k.start)} · ${k.players}P</b><span class="muted small">${esc(stName(k.stationId))} · till ${fmtT(k.end)}${gameLine(k.game)}${k.useMem ? ' · ⭐ Elite' : ''}</span></div>
+    <div class="acts">${F.cancel === k.id ? `<button class="btn sm danger" onclick="myCancel('${k.id}')">Confirm cancel</button>` : `<button class="btn sm" onclick="F.cancel='${k.id}';render()">Cancel</button>`}</div></div>`).join('')
+    : `<div class="card empty">Nothing booked. <button class="linkbtn" onclick="goP('book')">Book a slot</button></div>`}</div>
+  <h2>Played</h2>
+  <div class="list">${past.length ? past.map(s => `<div class="card li"><div class="t" style="color:var(--sun)">${money(s.amount)}</div>
+    <div class="m"><b>${fmtDay(s.endedAt)} · ${fmtMin(s.billMin || 0)}</b><span class="muted small">${esc(stName(s.stationId))} · ${s.players}P${s.memberUsed ? ` · ⭐ ${s.memberUsed/60}h from pass` : ''}</span></div></div>`).join('')
+    : '<div class="card empty">Your game history shows up here.</div>'}</div>`;
+}
+function myCancel(id){ const k = S.bookings.find(x => x.id === id); k.status = 'cancelled'; F.cancel = null; save(); render(); toast('Booking cancelled. The slot is open again.'); }
+function pProfile(){
+  const u = me(), pct = profilePct(u);
+  const buys = S.sessions.filter(s => s.kind === 'membership' && s.userId === u.id).length;
+  const used = S.sessions.filter(s => s.userId === u.id).reduce((a,s) => a + (s.memberUsed || 0), 0);
+  if (F.editing) return `<h2 style="margin-top:6px">Edit <em>profile</em></h2>${profileFields(u)}
+    <div class="row2"><button class="btn" onclick="F.editing=false;render()">Cancel</button><button class="btn primary" onclick="saveProfile()">Save</button></div>`;
+  return `<div class="card" style="display:flex;gap:14px;align-items:center;margin-top:6px"><div class="avatar lg">${esc((callName(u)[0] || 'P').toUpperCase())}</div>
+    <div style="min-width:0"><div class="who">${esc(u.name || 'Add your name')}</div><div class="verified">+91 ${u.phone} ✓ verified</div>
+    ${isMember(u) ? '<span class="mbadge">⭐ ELITE</span>' : ''}</div></div>
+  <div class="card" style="margin-top:12px"><div style="display:flex;justify-content:space-between"><b>Profile ${pct}%</b><button class="linkbtn" style="padding:0" onclick="F={editing:true};render()">Edit</button></div><div class="progress"><i style="width:${pct}%"></i></div>
+    <div class="kv"><span>Name</span><b>${esc(u.name || '—')}</b></div><div class="kv"><span>Phone</span><b>+91 ${u.phone}</b></div>
+    <div class="kv"><span>Email ID</span><b>${esc(u.email || '—')}</b></div><div class="kv" style="border:0"><span>Birthdate</span><b>${u.dob ? fmtDate(u.dob) : '—'}</b></div></div>
+  ${isMember(u) ? `<h2>Elite <em>pass</em></h2><div class="card"><div class="kv"><span>Hours left</span><b style="color:var(--gold2)">${fmtMin(u.mins)}</b></div><div class="kv"><span>Hours used</span><b>${fmtMin(used)}</b></div><div class="kv"><span>Passes bought</span><b>${buys || 1}</b></div><div class="kv" style="border:0"><span>Member since</span><b>${fmtDate(u.memberSince)}</b></div></div>` : ''}
+  <div class="stack" style="margin-top:18px"><button class="btn wide" onclick="logout()">Log out</button></div>`;
+}
+function logout(){ meId = null; ls.del('pxo_me'); auth = {step:'phone', phone:'', code:'', err:''}; B = freshB(); F = {}; ptab = 'home'; render(); }
+
+/* ---------- admin login (reached only through the #admin link) ---------- */
+function viewAdminLogin(){
+  return `<div class="auth">
+    <div><h1>Counter <span>login</span></h1><p class="lead" style="margin-top:10px">For Portal XO staff only.</p></div>
+    <div class="field"><label for="adId">Admin ID</label><input class="input" id="adId" autocomplete="username" autocapitalize="none"></div>
+    <div class="field"><label for="adPw">Password</label><input class="input" id="adPw" type="password" autocomplete="current-password" onkeydown="if(event.key==='Enter')adminLogin()"></div>
+    ${auth.aerr ? `<div class="alert bad">${esc(auth.aerr)}</div>` : ''}
+    <button class="btn primary wide" style="min-height:54px;font-size:16px" onclick="adminLogin()">Log in</button>
+    <div class="demo-sms">🔑 <div>Demo login: ID <b style="letter-spacing:1px;font-size:14px">admin</b> · password <b style="letter-spacing:1px;font-size:14px">portal123</b></div></div>
+  </div>`;
+}
+function adminLogin(){
+  const a = S.settings.admin;
+  if ($('adId').value.trim() !== a.id || $('adPw').value !== a.pass){ auth.aerr = 'Wrong ID or password.'; render(); return; }
+  auth.aerr = ''; adminOk = true; ls.set('pxo_admin_ok','1'); atab = 'live'; render(); window.scrollTo({top:0});
+}
+function adminLogout(){ adminOk = false; ls.del('pxo_admin_ok'); closeSheet(); render(); window.scrollTo({top:0}); }
+function syncMode(){ let h = ''; try { h = location.hash; } catch(e){} mode = h === '#admin' ? 'admin' : 'player'; }
+window.addEventListener('hashchange', () => { syncMode(); closeSheet(); render(); window.scrollTo({top:0}); });
+
+/* =====================================================================
+   ADMIN SIDE
+   ===================================================================== */
+function viewLive(){
+  const now = Date.now(), act = S.sessions.filter(s => s.status === 'active');
+  const up = S.bookings.filter(k => k.status === 'upcoming' && k.start > now - 30*MIN).sort((a,b) => a.start - b.start);
+  const rev = todayDone().reduce((a,s) => a + s.amount, 0), ls_ = liveStations(), freeNow = ls_.filter(st => !activeOn(st.id)).length;
+  return `<div class="stats">
+    <div class="stat"><small>Playing</small><b class="p">${act.length}/${ls_.length}</b></div>
+    <div class="stat"><small>Free now</small><b class="g">${freeNow}</b></div>
+    <div class="stat"><small>Next booking</small><b class="c">${up[0] ? fmtT(up[0].start) : '—'}</b></div>
+    <div class="stat"><small>Today</small><b class="s">${money(rev)}</b></div></div>
+  <div class="row2" style="margin-top:12px"><button class="btn primary" onclick="openWalkin()">＋ Walk-in player</button><button class="btn cyan" onclick="openPhoneBooking()">＋ Phone booking</button></div>
+  <h2>Live <em>Stations</em></h2><div class="stations">${S.stations.map(stationCard).join('')}</div>`;
+}
+const memTag = id => { const u = userById(id); return isMember(u) ? `<div class="mbadge">⭐ Elite · ${hoursLeft(u)}h left</div>` : ''; };
+function stationCard(st){
+  const now = Date.now(), s = activeOn(st.id);
+  if (st.off && !s) return `<div class="card station" style="opacity:.7"><div class="st-top"><div class="st-name">${esc(st.name)}</div><span class="pill over">Out of service</span></div>
+    <div class="muted small" style="margin-bottom:12px">Hidden from player bookings until it's back.</div><button class="btn wide" onclick="toggleOff('${st.id}')">Back in service</button></div>`;
+  if (s){
+    const base = Math.max(s.end, now), nb = nextBooking(st.id, now), gap = nb ? Math.round((nb.start - base)/MIN) : null;
+    return `<div class="card station playing">
+      <div class="st-top"><div class="st-name">${esc(st.name)}</div><span class="pill playing" data-pill>Playing</span></div>
+      <div class="who">${esc(s.name)} <span class="muted small">· ${s.players} player${s.players > 1 ? 's' : ''}${gameLine(s.game)}</span></div>${memTag(s.userId)}
+      <div class="timer" data-cd="${s.end}">--:--</div><div class="muted small">${fmtT(s.start)} → ${fmtT(s.end)}</div>
+      <div class="bar"><i data-pg data-s="${s.start}" data-e="${s.end}"></i></div>
+      ${nb ? `<div class="next ${gap < 60 ? 'warn' : ''}">Next: <b>${esc(nb.name)}</b> at ${fmtT(nb.start)} · ${gap >= 60 ? `${Math.floor(gap/60)}h free to extend` : 'can\'t extend here'}</div>` : `<div class="next ok">No booking after this. Free to extend.</div>`}
+      <div class="row2"><button class="btn" onclick="openExtend('${s.id}')">+ Extend</button><button class="btn primary" onclick="openBill('${s.id}')">End & Bill</button></div></div>`;
+  }
+  const nb = nextBooking(st.id, now);
+  const mid = (nb && nb.start - now <= 60*MIN)
+    ? `<div class="arrive">🎟️ <b>${esc(nb.name)}</b> · ${nb.players}P · <b>${fmtT(nb.start)}–${fmtT(nb.end)}</b>${gameLine(nb.game)}${nb.source === 'app' ? ' · App' : ''}${memTag(nb.userId)}<div class="muted small" style="margin-top:4px">${nb.start <= now ? relIn(nb.start) : 'Arriving ' + relIn(nb.start)}</div></div>
+       <div class="row2"><button class="btn cyan" onclick="checkIn('${nb.id}')">✓ Check in</button><button class="btn" onclick="openWalkin('${st.id}')">Walk-in</button></div>`
+    : `<div class="next ${nb ? '' : 'ok'}">${nb ? `Free until ${fmtT(nb.start)} · ${esc(nb.name)} booked` : 'Free for the rest of the night'}</div><button class="btn cyan wide" onclick="openWalkin('${st.id}')">▶ Start walk-in</button>`;
+  return `<div class="card station free"><div class="st-top"><div class="st-name">${esc(st.name)}</div><span class="pill free">Free</span></div><div class="ready">READY</div>
+    <div class="muted small" style="margin:-4px 0 12px">🎮 ${(st.games || []).length ? esc(st.games.join(', ')) : 'No games set. Add them in Settings.'}</div>${mid}</div>`;
+}
+
+/* extend: whole hours only */
+function openExtend(id){
+  const s = S.sessions.find(x => x.id === id), now = Date.now(), base = Math.max(s.end, now);
+  const nb = nextBooking(s.stationId, base), room = nb ? Math.floor((nb.start - base)/MIN) : null;
+  const info = !nb ? `<div class="alert ok">No booking after ${esc(s.name)} on ${esc(stName(s.stationId))}. Extend freely.</div>`
+    : room >= 60 ? `<div class="alert warn">Only <b>${Math.floor(room/60)}h</b> free before <b>${esc(nb.name)}</b>'s booking at ${fmtT(nb.start)}.</div>`
+    : `<div class="alert bad">Not even 1 hour free. <b>${esc(nb.name)}</b> is booked at ${fmtT(nb.start)}.</div>`;
+  openSheet(`<h3>Extend · ${esc(s.name)}</h3><div class="sub">${esc(stName(s.stationId))} · ${s.players}P · ${money(rateFor(s.players))}/hr · ends ${fmtT(s.end)}</div>${info}
+    <div class="ext">${[60,120,180].map(m => { const clash = nb && room < m; return `<button class="btn ${clash ? 'clash' : ''}" onclick="doExtend('${id}',${m})">+${m/60}h<small>${clash ? 'clash' : money(rateFor(s.players)*m/60)}</small></button>`; }).join('')}</div>`);
+}
+function doExtend(id, m){
+  const s = S.sessions.find(x => x.id === id), now = Date.now(), base = Math.max(s.end, now), newEnd = base + m*MIN;
+  const c = occupied(s.stationId, base, newEnd, s.id);
+  if (!c){ s.end = newEnd; save(); closeSheet(); toast(`+${m/60}h added · ${s.name} now ends ${fmtT(newEnd)}`); render(); return; }
+  const k = c.item, fitH = Math.floor((k.start - base)/H);
+  const alts = freeStations(now, newEnd, s.id, s.game).filter(x => x.id !== s.stationId);
+  const kAlts = freeStations(k.start, k.end, k.id, k.game).filter(x => x.id !== s.stationId).slice(0, 2);
+  let opts = '';
+  if (fitH >= 1) opts += `<button class="btn" onclick="applyEnd('${id}',${base + fitH*H})">Extend only ${fitH}h here (till ${fmtT(base + fitH*H)})</button>`;
+  alts.slice(0, 2).forEach(a => opts += `<button class="btn cyan" onclick="moveSession('${id}','${a.id}',${newEnd})">Move ${esc(s.name)} to ${esc(a.name)} & add ${m/60}h</button>`);
+  kAlts.forEach(a => opts += `<button class="btn" onclick="shiftBooking('${k.id}','${a.id}','${id}',${m})">Shift ${esc(k.name)}'s booking to ${esc(a.name)}</button>`);
+  if (!opts) opts = `<div class="alert bad">Every station is booked in that window.</div>`;
+  openSheet(`<h3>Slot clash</h3><div class="sub">Can't add ${m/60}h on ${esc(stName(s.stationId))}</div>
+    <div class="alert warn"><b>${esc(k.name)}</b> (${k.players}P) has booked ${esc(stName(k.stationId))} at <b>${fmtT(k.start)}</b>. Pick a fix:</div>
+    <div class="stack">${opts}<button class="btn danger" onclick="closeSheet()">Cancel</button></div>`);
+}
+function applyEnd(id, end){ const s = S.sessions.find(x => x.id === id); s.end = end; save(); closeSheet(); toast(`Extended · ends ${fmtT(end)}`); render(); }
+function moveSession(id, stId, end){ const s = S.sessions.find(x => x.id === id); s.stationId = stId; s.end = end; save(); closeSheet(); toast(`${s.name} moved to ${stName(stId)} · ends ${fmtT(end)}`); render(); }
+function shiftBooking(kid, stId, sid, m){ const k = S.bookings.find(x => x.id === kid); k.stationId = stId; save(); toast(`${k.name}'s booking moved to ${stName(stId)}`); doExtend(sid, m); }
+
+/* walk-in with phone lookup */
+function openWalkin(stId){
+  const now = Date.now(), free = liveStations().filter(st => !activeOn(st.id));
+  if (!stId){ if (!free.length){ toast('All stations are busy right now'); return; } stId = (freeStations(now, now + H)[0] || free[0]).id; }
+  F = {stationId:stId, players:2, dur:60, game:'', userId:null};
+  const am = S.users.filter(u => isMember(u) && hoursLeft(u) > 0);
+  openSheet(`<h3>Walk-in player</h3><div class="sub">${[1,2,3,4].map(p => `${p}P ${money(rateFor(p))}`).join(' · ')} per hour</div>
+    <div class="field"><label>Game they want</label>${chips('game', [{v:'', l:'Any'}, ...playableGames().map(g => ({v:g, l:esc(g)}))], '', 'pickWG')}</div>
+    <div class="field"><label>PS5 with that game</label><div id="wkSt">${wkStations()}</div></div>
+    ${am.length ? `<div class="field"><label>Elite members</label><div class="chips">${am.map(u => `<button class="chip" onclick="$('wPhone').value='${u.phone}';lookupW('${u.phone}')">⭐ ${esc(firstName(u))} · ${hoursLeft(u)}h</button>`).join('')}</div></div>` : ''}
+    <div class="field"><label for="wPhone">Mobile number</label><input class="input" id="wPhone" inputmode="numeric" maxlength="10" placeholder="98XXXXXXXX" oninput="lookupW(this.value)"><div id="wFound" style="margin-top:6px"></div></div>
+    <div class="field"><label for="wName">Name</label><input class="input" id="wName" placeholder="Customer name" autocomplete="off"></div>
+    <div class="field"><label>Players</label>${chips('players', [1,2,3,4].map(v => ({v, l:v + 'P'})), 2)}</div>
+    <div class="field"><label>Duration</label>${chips('dur', [{v:60,l:'1h'},{v:120,l:'2h'},{v:180,l:'3h'},{v:240,l:'4h'}], 60)}</div>
+    <button class="btn primary wide" onclick="startWalkin()">▶ Start session</button>`);
+}
+function wkStations(){
+  const now = Date.now(), free = liveStations().filter(st => !activeOn(st.id) && hasGame(st, F.game));
+  if (!free.length){ F.stationId = null; return `<div class="alert bad" style="margin:0">No free PS5 has ${esc(F.game)} right now.</div>`; }
+  if (!free.some(s => s.id === F.stationId)) F.stationId = (free.find(st => !occupied(st.id, now, now + H)) || free[0]).id;
+  return chips('stationId', free.map(st => { const nb = nextBooking(st.id, now); return {v:st.id, l:`${esc(st.name)}${nb && nb.start - now < 2*H ? ` · booked ${fmtT(nb.start)}` : ''}`}; }), F.stationId);
+}
+function pickWG(el, key, val){ pickF(el, key, val); $('wkSt').innerHTML = wkStations(); }
+function lookupW(v){
+  const p = ph10(v), u = p.length === 10 && userByPhone(p), box = $('wFound');
+  if (u){ F.userId = u.id; if (u.name) $('wName').value = u.name; box.innerHTML = isMember(u) ? `<span class="mbadge">⭐ Elite member · ${hoursLeft(u)}h left</span>` : `<span class="verified">Returning player</span>`; }
+  else { F.userId = null; box.innerHTML = p.length === 10 ? '<span class="muted small">New player. Their number will be saved.</span>' : ''; }
+}
+function startWalkin(force){
+  const name = ($('wName') || {}).value?.trim() || F.name || 'Walk-in', phone = ($('wPhone') || {}).value || F.phone || '';
+  F.name = name; F.phone = phone;
+  const now = Date.now(), dur = force || F.dur, end = now + dur*MIN, stId = F.stationId;
+  if (!stId) return toast(`No free PS5 has ${F.game} right now. Pick another game.`);
+  const c = occupied(stId, now, end, null);
+  if (!c){
+    let u = userById(F.userId); if (!u && ph10(phone).length === 10) u = ensureUser(phone, name, 'walk-in');
+    const s = {id:uid(), stationId:stId, name, phone:ph10(phone), players:F.players, game:F.game, start:now, end, status:'active', userId:u ? u.id : null, useMem:true};
+    S.sessions.push(s); const m = queueMsg(phone, name, sessionMsg(s), 'walk-in');
+    save(); closeSheet(); toast(`${name} started on ${stName(stId)} · till ${fmtT(end)}${m ? ' · WhatsApp sent' : ''}`); render(); return;
+  }
+  const k = c.item, fitH = c.type === 'booking' ? Math.floor((k.start - now)/H) : 0;
+  const alts = freeStations(now, now + F.dur*MIN, null, F.game).filter(x => x.id !== stId);
+  let opts = '';
+  if (fitH >= 1 && fitH*60 < F.dur) opts += `<button class="btn" onclick="startWalkin(${fitH*60})">Play ${fitH}h here (till ${fmtT(now + fitH*H)})</button>`;
+  alts.slice(0, 3).forEach(a => opts += `<button class="btn cyan" onclick="F.stationId='${a.id}';startWalkin()">Use ${esc(a.name)}, free for ${F.dur/60}h</button>`);
+  if (!opts) opts = `<div class="alert bad">No station is free for ${F.dur/60}h right now.</div>`;
+  openSheet(`<h3>Heads up</h3><div class="sub">${esc(name)} wants ${F.dur/60}h</div>
+    <div class="alert warn">${c.type === 'booking' ? `<b>${esc(k.name)}</b> has booked ${esc(stName(stId))} at <b>${fmtT(k.start)}</b>.` : `${esc(stName(stId))} is still in use.`}</div>
+    <div class="stack">${opts}<button class="btn danger" onclick="closeSheet()">Cancel</button></div>`);
+}
+
+/* check-in */
+function checkIn(kid, stOverride){
+  const k = S.bookings.find(x => x.id === kid), now = Date.now(), dur = k.end - k.start, stId = stOverride || k.stationId, busy = activeOn(stId);
+  if (busy){
+    const alts = freeStations(now, now + dur, k.id, k.game);
+    openSheet(`<h3>${esc(stName(stId))} still busy</h3><div class="sub">${esc(busy.name)} hasn't finished yet</div>
+      <div class="alert warn">Don't make ${esc(k.name)} wait. Seat them on a free station:</div>
+      <div class="stack">${alts.map(a => `<button class="btn cyan" onclick="checkIn('${kid}','${a.id}')">Check in on ${esc(a.name)}</button>`).join('') || '<div class="alert bad">No free station right now.</div>'}
+      <button class="btn" onclick="closeSheet();openBill('${busy.id}')">End ${esc(busy.name)}'s session first</button><button class="btn danger" onclick="closeSheet()">Cancel</button></div>`);
+    return;
+  }
+  k.status = 'checkedin'; k.stationId = stId;
+  S.sessions.push({id:uid(), stationId:stId, name:k.name, phone:k.phone, players:k.players, game:k.game || '', start:now, end:now + dur, status:'active', bookingId:k.id, userId:k.userId || (userByPhone(k.phone) || {}).id || null, useMem:k.useMem !== false});
+  save(); closeSheet(); toast(`${k.name} checked in on ${stName(stId)}`); render();
+}
+function cancelBooking(kid){ const k = S.bookings.find(x => x.id === kid); k.status = 'cancelled'; save(); toast(`${k.name}'s booking cancelled`); render(); }
+
+/* billing with Elite hours */
+function openBill(id, useOverride){
+  const s = S.sessions.find(x => x.id === id), now = Date.now(), u = userById(s.userId);
+  if (useOverride !== undefined) s.useMem = useOverride;
+  const planned = Math.round((s.end - s.start)/MIN), played = Math.max(1, Math.round((now - s.start)/MIN));
+  const billMin = Math.max(Math.max(60, Math.ceil(planned/60)*60), Math.ceil(Math.max(0, played - 10)/60)*60);
+  const sp = memberSplit(u, s.players, billMin, s.useMem !== false);
+  F = {method:'UPI', billMin, memUse:sp.cov*60};
+  const memHtml = isMember(u) ? `<div class="field"><label>Elite hours (${hoursLeft(u)}h left)</label><div class="chips"><button class="chip ${s.useMem !== false ? 'on' : ''}" onclick="openBill('${id}',true)">⭐ Use hours</button><button class="chip ${s.useMem === false ? 'on' : ''}" onclick="openBill('${id}',false)">Charge full</button></div></div>
+    ${sp.cov ? `<div class="alert gold"><b>${sp.cov}h</b> deducted from ${esc(firstName(u))}'s pass (${hoursLeft(u)}h → ${hoursLeft(u) - sp.cov}h).${s.players > 1 ? `<br>Friends pay the difference: ${sp.cov}h × ${money(sp.share)}.` : ''}${sp.unc ? `<br>${sp.unc}h not covered, charged at ${money(rateFor(s.players))}/hr.` : ''}</div>` : ''}` : '';
+  openSheet(`<h3>End & Bill · ${esc(s.name)}</h3><div class="sub">${esc(stName(s.stationId))} · ${s.players} player${s.players > 1 ? 's' : ''}</div>
+    <div class="kv"><span>Started</span><b>${fmtT(s.start)}</b></div><div class="kv"><span>Played</span><b>${fmtMin(played)}</b></div>
+    <div class="kv" style="margin-bottom:14px"><span>Billed</span><b>${billMin/60}h × ${money(rateFor(s.players))} (${s.players}P)</b></div>
+    ${played > planned + 10 ? `<div class="alert warn">Overtime ${fmtMin(played - planned)}, charged as a full extra hour.</div>` : ''}${memHtml}
+    <div class="field"><label for="bAmt">Amount to collect</label><input class="big-amt" id="bAmt" inputmode="numeric" value="${sp.pay}"></div>
+    <div class="field"><label>Paid by</label>${chips('method', [{v:'UPI',l:'UPI'},{v:'Cash',l:'Cash'}], 'UPI')}</div>
+    <div class="stack"><button class="btn primary wide" onclick="settle('${id}')">✓ Mark paid & free station</button>
+    ${s.phone ? `<a class="btn wa wide" target="_blank" rel="noopener" href="${waLink(s.phone, `Hi ${s.name}! Thanks for playing at Portal XO 🎮\n${stName(s.stationId)} · ${billMin/60}h\nPaid: ${money(sp.pay)}${sp.cov ? `\n⭐ ${sp.cov}h used from Elite Pass. ${hoursLeft(u) - sp.cov}h left.` : ''}\nSee you soon!`)}">Send bill on WhatsApp</a>` : ''}</div>`);
+}
+function settle(id){
+  const s = S.sessions.find(x => x.id === id), u = userById(s.userId);
+  s.status = 'done'; s.amount = +$('bAmt').value || 0; s.method = F.method; s.endedAt = Date.now(); s.billMin = F.billMin;
+  if (u && F.memUse){ u.mins = Math.max(0, u.mins - F.memUse); s.memberUsed = F.memUse; }
+  save(); closeSheet(); toast(`${money(s.amount)} received via ${s.method} · ${stName(s.stationId)} is free`); render();
+}
+
+/* schedule */
+function viewSchedule(){
+  const now = Date.now(), t0 = Math.floor((now - 2*H)/H)*H, hours = 12, PX = 1.3, W = hours*60*PX, pos = t => (t - t0)/MIN*PX;
+  let head = ''; for (let i = 0; i <= hours; i++) head += `<span style="left:${i*60*PX}px">${new Date(t0 + i*H).toLocaleTimeString('en-US', {hour:'numeric'})}</span>`;
+  const rows = S.stations.map(st => {
+    const items = [];
+    S.sessions.filter(s => s.stationId === st.id).forEach(s => { const a = s.start, b = s.status === 'active' ? Math.max(s.end, now) : (s.endedAt || s.end); items.push({a, b, cls: s.status === 'active' ? 'a' : 'd', t:s.name, sub:`${fmtT(a)}–${fmtT(b)}`}); });
+    S.bookings.filter(k => k.stationId === st.id && k.status === 'upcoming').forEach(k => items.push({a:k.start, b:k.end, cls:'b', t:'🎟 ' + k.name, sub:`${fmtT(k.start)} · ${k.players}P`}));
+    return `<div class="tl-row" style="background-size:${60*PX}px 100%">${items.filter(i => i.b > t0 && i.a < t0 + hours*H).map(i => { const l = Math.max(0, pos(i.a)), w = Math.max(18, pos(i.b) - l - 2); return `<div class="blk ${i.cls}" style="left:${l}px;width:${w}px">${esc(i.t)}<small>${i.sub}</small></div>`; }).join('')}</div>`;
+  }).join('');
+  const up = S.bookings.filter(k => k.status === 'upcoming').sort((a,b) => a.start - b.start);
+  return `<h2 style="margin-top:6px">Station <em>Timeline</em></h2>
+  <div class="tl"><div class="tl-labels"><div>STATION</div>${S.stations.map(s => `<div>${esc(s.name)}</div>`).join('')}</div>
+    <div class="tl-scroll"><div class="tl-inner" style="width:${W}px"><div class="tl-head">${head}</div>${rows}<div class="nowline" style="left:${pos(now)}px"></div></div></div></div>
+  <div class="muted small" style="margin-top:8px">Pink: playing · Dashed: booked · Grey: done · Swipe sideways</div>
+  <h2>Upcoming <em>Bookings</em></h2>
+  <button class="btn cyan wide" style="margin-bottom:10px" onclick="openPhoneBooking()">＋ Add phone booking</button>
+  <div class="list">${up.length ? up.map(k => `<div class="card li"><div class="t">${fmtT(k.start)}</div>
+    <div class="m"><b>${esc(k.name)} · ${k.players}P</b><span class="muted small">${esc(stName(k.stationId))} · till ${fmtT(k.end)}${gameLine(k.game)} · ${k.source === 'app' ? 'App' : 'Phone'} · ${relIn(k.start)}${k.msgId ? ' · <span class="verified">WhatsApp ✓</span>' : ''}</span>${memTag(k.userId)}</div>
+    <div class="acts"><button class="btn sm cyan" onclick="checkIn('${k.id}')">Check in</button>
+    ${k.phone ? `<a class="btn sm wa" target="_blank" rel="noopener" href="${waLink(k.phone, `Hi ${k.name}! Reminder: your Portal XO slot is at ${fmtT(k.start)} on ${stName(k.stationId)} 🎮`)}">Remind</a>` : ''}
+    <button class="btn sm danger" aria-label="Cancel booking" onclick="cancelBooking('${k.id}')">✕</button></div></div>`).join('') : '<div class="card empty">No upcoming bookings</div>'}</div>`;
+}
+function openPhoneBooking(){
+  F = {players:2, dur:60, day:0, userId:null, game:''};
+  openSheet(`<h3>Phone booking</h3><div class="sub">For customers who call instead of using the app</div>
+    <div class="field"><label for="wPhone">Mobile number</label><input class="input" id="wPhone" inputmode="numeric" maxlength="10" placeholder="98XXXXXXXX" oninput="lookupW(this.value)"><div id="wFound" style="margin-top:6px"></div></div>
+    <div class="field"><label for="wName">Name</label><input class="input" id="wName" placeholder="Customer name"></div>
+    <div class="field"><label>Game</label>${chips('game', [{v:'', l:'Any'}, ...playableGames().map(g => ({v:g, l:esc(g)}))], '')}</div>
+    <div class="field"><label>Day</label>${chips('day', windows().map((w,i) => ({v:i, l:w.label})), 0)}</div>
+    <div class="row2"><div class="field"><label for="wTime">Start time</label><input class="input" id="wTime" type="time" value="20:00"></div>
+    <div class="field"><label>Players</label>${chips('players', [1,2,3,4].map(v => ({v, l:v + 'P'})), 2)}</div></div>
+    <div class="field"><label>Duration</label>${chips('dur', [{v:60,l:'1h'},{v:120,l:'2h'},{v:180,l:'3h'},{v:240,l:'4h'}], 60)}</div>
+    <button class="btn primary wide" onclick="savePhoneBooking()">Save booking</button>`);
+}
+function savePhoneBooking(){
+  const name = $('wName').value.trim(), phone = $('wPhone').value, t = $('wTime').value;
+  if (!name) return toast('Enter the customer name');
+  const w = windows()[F.day], [hh, mm] = t.split(':').map(Number), d = new Date(w.start); d.setHours(hh, mm, 0, 0);
+  let a = +d; if (a < w.start) a += DAY;
+  const b = a + F.dur*MIN;
+  if (a < Date.now()) return toast('That time has already passed');
+  if (b > w.end) return toast(`That runs past closing (${fmtT(w.end)})`);
+  const free = freeStations(a, b, null, F.game);
+  if (!free.length) return toast(F.game ? `Every PS5 with ${F.game} is booked then. Try another time.` : 'All stations are booked then. Try another time.');
+  if (ph10(phone).length !== 10) return toast('Enter a 10-digit number so we can send the WhatsApp confirmation');
+  const u = ensureUser(phone, name, 'phone');
+  const k = {id:uid(), stationId:free[0].id, name, phone:ph10(phone), userId:u.id, players:F.players, game:F.game, start:a, end:b, status:'upcoming', source:'call', useMem:true};
+  S.bookings.push(k); const m = queueMsg(phone, name, bookingMsg(k), 'booking'); k.msgId = m && m.id;
+  save(); render();
+  openSheet(`<h3>Booked ✓</h3><div class="sub">${esc(name)} · ${esc(stName(k.stationId))} · ${fmtDay(a)} ${fmtT(a)}</div>${waPreview(m)}
+    <div class="stack" style="margin-top:14px"><a class="btn wa wide" target="_blank" rel="noopener" href="${waLink(m.to, m.text)}">Open in WhatsApp</a><button class="btn wide" onclick="closeSheet()">Done</button></div>`);
+}
+
+/* players & Elite passes */
+function viewPlayers(){
+  const mem = S.users.filter(isMember), sold = todayDone().filter(s => s.kind === 'membership');
+  F.pf = F.pf || 'all';
+  return `<div class="stats" style="margin-top:6px">
+    <div class="stat"><small>Players</small><b class="c">${S.users.length}</b></div>
+    <div class="stat"><small>Elite members</small><b class="s">${mem.length}</b></div>
+    <div class="stat"><small>Hours owed</small><b class="p">${mem.reduce((a,u) => a + hoursLeft(u), 0)}h</b></div>
+    <div class="stat"><small>Passes today</small><b class="g">${sold.length}</b></div></div>
+  <div class="row2" style="margin-top:14px"><button class="btn" onclick="openAddPlayer()">＋ Add player</button><button class="btn gold" onclick="openSellPass()">⭐ Sell Elite Pass</button></div><div>
+  <div class="muted small" style="text-align:center;margin-top:8px">Hours never expire. They're deducted only when the member plays.</div></div>
+  <h2>All <em>Players</em></h2>
+  <div class="field"><input class="input" id="pSearch" placeholder="Search name or number" value="${esc(F.pq || '')}" oninput="F.pq=this.value;renderPlayerList()"></div>
+  ${chips('pf', [{v:'all',l:'All'},{v:'elite',l:'⭐ Elite'},{v:'new',l:'Profile incomplete'}], F.pf, '(function(e,k,v){pickF(e,k,v);renderPlayerList()})')}
+  <div class="list" id="plist" style="margin-top:12px"></div>`;
+}
+function renderPlayerList(){
+  const el = $('plist'); if (!el) return;
+  const qy = (F.pq || '').toLowerCase().trim();
+  let list = S.users.slice();
+  if (F.pf === 'elite') list = list.filter(isMember);
+  if (F.pf === 'new') list = list.filter(u => profilePct(u) < 100);
+  if (qy) list = list.filter(u => (u.name || '').toLowerCase().includes(qy) || (u.tag || '').toLowerCase().includes(qy) || u.phone.includes(qy.replace(/\D/g,'') || '§'));
+  list.sort((a,b) => (isMember(b) - isMember(a)) || (b.createdAt - a.createdAt));
+  const visits = id => S.sessions.filter(s => s.userId === id && s.kind !== 'membership').length;
+  el.innerHTML = list.length ? list.map(u => `<div class="card">
+    <div class="st-top"><div style="min-width:0"><div class="who">${esc(u.name || 'No name yet')}</div>
+      <div class="muted small">+91 ${u.phone} · ${u.verified ? 'App verified' : u.source === 'walk-in' ? 'Walk-in' : u.source === 'counter' ? 'Added at counter' : 'Phone'} · ${visits(u.id)} visit${visits(u.id) === 1 ? '' : 's'}${u.dob ? ' · 🎂 ' + new Date(u.dob).toLocaleDateString('en-IN',{day:'numeric',month:'short'}) : ''}${u.email ? ' · ' + esc(u.email) : ''}</div></div>
+      ${isMember(u) ? `<span class="pill gold">${hoursLeft(u)}h left</span>` : `<span class="pill" style="color:var(--muted);border-color:var(--line)">${profilePct(u)}%</span>`}</div>
+    ${isMember(u) ? `<div class="bar"><i style="width:${Math.min(100, (u.mins || 0)/Math.max(u.total || 720, u.mins || 0)*100)}%;background:linear-gradient(90deg,var(--gold3),var(--gold2))"></i></div>` : ''}
+    <div class="row2"><button class="btn ${isMember(u) ? '' : 'gold'}" onclick="openSellPass('${u.id}')">${isMember(u) ? '+ Add 12h' : '⭐ Make Elite'}</button>
+    <a class="btn wa" target="_blank" rel="noopener" href="${waLink(u.phone, isMember(u) ? `Hi ${firstName(u) || ''}! ⭐ Your Portal XO Elite Pass has ${hoursLeft(u)} hours left. They never expire, book anytime 🎮` : `Hi ${firstName(u) || ''}! Thanks for playing at Portal XO 🎮`)}">WhatsApp</a></div></div>`).join('')
+    : '<div class="card empty">No players match</div>';
+}
+function openAddPlayer(){
+  openSheet(`<h3>Add player</h3><div class="sub">For someone who came straight to the counter</div>
+    <div class="field"><label for="nPhone">Mobile number *</label><input class="input" id="nPhone" inputmode="numeric" maxlength="10" placeholder="98XXXXXXXX"></div>
+    <div class="field"><label for="nName">Name *</label><input class="input" id="nName" placeholder="Full name"></div>
+    <div class="field"><label for="nEmail">Email ID</label><input class="input" id="nEmail" type="email" placeholder="Optional"></div>
+    <div class="field"><label for="nDob">Birthdate</label><input class="input" id="nDob" type="date"></div>
+    <button class="btn primary wide" onclick="addPlayer()">Save player</button>`);
+}
+function addPlayer(){
+  const p = ph10($('nPhone').value), name = $('nName').value.trim();
+  if (p.length !== 10) return toast('Enter a 10-digit mobile number');
+  if (!name) return toast('Enter the player\'s name');
+  if (userByPhone(p)) return toast('This number is already saved');
+  const u = ensureUser(p, name, 'counter'); u.email = $('nEmail').value.trim(); u.dob = $('nDob').value;
+  save(); closeSheet(); render(); toast(`${name} added`);
+}
+function openSellPass(id){
+  const u = userById(id); F.sellId = id || null; F.method = 'UPI';
+  openSheet(`<h3>${u ? (isMember(u) ? 'Top up · ' : 'Elite Pass · ') + esc(u.name || '+91 ' + u.phone) : 'Sell Elite Pass'}</h3><div class="sub">${money(S.settings.pass)} · 12 hours · never expires</div>
+    ${u ? (isMember(u) ? `<div class="alert gold">Adds 12h: ${hoursLeft(u)}h → ${hoursLeft(u) + 12}h.</div>` : '') :
+    `<div class="field"><label for="wPhone">Mobile number</label><input class="input" id="wPhone" inputmode="numeric" maxlength="10" placeholder="98XXXXXXXX" oninput="lookupW(this.value)"><div id="wFound" style="margin-top:6px"></div></div>
+     <div class="field"><label for="wName">Name</label><input class="input" id="wName" placeholder="Member name"></div>`}
+    <div class="field"><label>Paid by</label>${chips('method', [{v:'UPI',l:'UPI'},{v:'Cash',l:'Cash'}], 'UPI')}</div>
+    <button class="btn gold wide" onclick="sellPass()">✓ Received ${money(S.settings.pass)}</button>`);
+}
+function sellPass(){
+  let u = userById(F.sellId);
+  if (!u){
+    const phone = $('wPhone').value, name = $('wName').value.trim();
+    if (ph10(phone).length !== 10) return toast('Enter the member\'s 10-digit number');
+    if (!name && !userByPhone(phone)) return toast('Enter the member\'s name');
+    u = ensureUser(phone, name, 'counter');
+  }
+  const now = Date.now();
+  u.mins = (u.mins || 0) + 720; u.total = u.mins; if (!u.memberSince) u.memberSince = now;
+  S.sessions.push({id:uid(), kind:'membership', stationId:null, name:u.name, userId:u.id, phone:u.phone, players:1, start:now, end:now, endedAt:now, status:'done', amount:S.settings.pass, method:F.method, billMin:0});
+  save(); closeSheet(); render(); toast(`⭐ ${u.name || u.phone} now has ${hoursLeft(u)}h of Elite play`);
+}
+
+/* report */
+function viewReport(){
+  const d = todayDone(), rev = d.reduce((a,s) => a + s.amount, 0), games = d.filter(s => s.kind !== 'membership');
+  const cash = d.filter(s => s.method === 'Cash').reduce((a,s) => a + s.amount, 0), upi = rev - cash;
+  const mins = games.reduce((a,s) => a + (s.billMin || 0), 0), passes = d.filter(s => s.kind === 'membership');
+  const eliteUsed = games.reduce((a,s) => a + (s.memberUsed || 0), 0), open = Math.max(1, (Date.now() - bizStart())/MIN);
+  return `<div class="stats" style="margin-top:6px">
+    <div class="stat"><small>Revenue</small><b class="s">${money(rev)}</b></div>
+    <div class="stat"><small>Sessions</small><b class="p">${games.length}</b></div>
+    <div class="stat"><small>Hours played</small><b class="c">${(mins/60).toFixed(1)}</b></div>
+    <div class="stat"><small>Elite hrs used</small><b class="g">${eliteUsed/60}h</b></div></div>
+  ${passes.length ? `<div class="alert gold" style="margin-top:12px">⭐ ${passes.length} Elite Pass${passes.length > 1 ? 'es' : ''} sold today · ${money(passes.reduce((a,s) => a + s.amount, 0))}</div>` : ''}
+  <h2>Cash <em>vs UPI</em></h2>
+  <div class="card"><div class="hbar"><i style="flex:${cash || 0.001}"></i><i style="flex:${upi || 0.001}"></i></div><div class="legend"><span style="color:var(--cyan)">Cash ${money(cash)}</span><span style="color:var(--pink)">UPI ${money(upi)}</span></div></div>
+  <h2>Station <em>Usage</em></h2>
+  <div class="card">${S.stations.map(st => { const m = games.filter(s => s.stationId === st.id).reduce((a,s) => a + (s.billMin || 0), 0);
+    return `<div class="ut"><b style="font-family:var(--display);font-size:11px">${esc(st.name)}</b><div class="track"><i style="width:${Math.min(100, m/open*100)}%"></i></div><span class="muted">${(m/60).toFixed(1)}h</span></div>`; }).join('')}</div>
+  <h2>Today's <em>Payments</em></h2>
+  <div class="list">${d.length ? d.slice().sort((a,b) => b.endedAt - a.endedAt).map(s => `<div class="card li"><div class="t" style="color:var(--sun)">${money(s.amount)}</div>
+    <div class="m"><b>${esc(s.name)}</b><span class="muted small">${s.kind === 'membership' ? '⭐ Elite Pass · 12h' : `${esc(stName(s.stationId))} · ${fmtMin(s.billMin || 0)}${s.memberUsed ? ` · ⭐ ${s.memberUsed/60}h from pass` : ''}`} · ${fmtT(s.endedAt)}</span></div>
+    <span class="pill ${s.method === 'Cash' ? 'free' : 'playing'}">${s.method}</span></div>`).join('') : '<div class="card empty">No payments yet today</div>'}</div>`;
+}
+
+/* settings tab */
+function viewSettings(){
+  const st = S.settings, msgs = (S.outbox || []).slice(0, 8);
+  const status = s => s.off ? '<span class="pill over">Off</span>' : activeOn(s.id) ? '<span class="pill playing">Playing</span>' : '<span class="pill free">Free</span>';
+  return `<h2 style="margin-top:6px">Game <em>library</em></h2>
+  <div class="card">
+    <div class="chips" style="margin-bottom:12px">${allGames().map(g => F.rmg === g
+      ? `<button class="chip on" style="border-color:var(--red)" onclick="removeGame(${q(g)})">Remove ${esc(g)}?</button>`
+      : `<button class="chip" onclick="F.rmg=${q(g)};render()">${esc(g)} ✕</button>`).join('')}</div>
+    <div class="st-row"><input class="input" id="newGame" placeholder="e.g. EA Sports FC 26" aria-label="New game name"><button class="btn primary" onclick="addGame()">＋ Add game</button></div>
+    <div class="muted small">Then tick which PS5s it's installed on below.</div>
+  </div>
+  <h2>PS5 <em>Stations</em></h2>
+  <div class="card">
+    ${S.stations.map(s => `<div class="st-row ${s.off ? 'off' : ''}"><input class="input" id="stn_${s.id}" value="${esc(s.name)}" aria-label="Station name" onchange="renameStation('${s.id}',this.value)">${status(s)}</div>
+      <div class="lbl" style="margin-top:2px">Installed games · ${(s.games || []).length}</div>
+      <div class="chips" style="margin-bottom:10px">${allGames().map(g => `<button class="chip gsm ${hasGame(s, g) && (s.games || []).length ? 'on' : ''}" onclick="toggleStGame('${s.id}',${q(g)})">${esc(g)}</button>`).join('')}</div>
+      <div class="row2" style="margin:-2px 0 14px">${s.off ? `<button class="btn sm" onclick="toggleOff('${s.id}')">Back in service</button>` : `<button class="btn sm" onclick="toggleOff('${s.id}')">Out of service</button>`}
+      ${F.rm === s.id ? `<button class="btn sm danger" onclick="removeStation('${s.id}')">Tap again to remove</button>` : `<button class="btn sm danger" onclick="F.rm='${s.id}';render()">Remove</button>`}</div>`).join('')}
+    <div class="st-row" style="margin-top:6px"><input class="input" id="newSt" placeholder="PS5 · ${pad(S.stations.length + 1)}" aria-label="New station name"><button class="btn primary" onclick="addStation()">＋ Add</button></div>
+    <div class="muted small">"Out of service" hides a PS5 from bookings without deleting it, e.g. when a controller is broken.</div>
+  </div>
+  <h2>Pricing <em>per hour</em></h2>
+  <div class="card"><div class="row2">${[1,2,3,4].map(p => `<div class="field"><label for="sR${p}">${p} player${p > 1 ? 's' : ''} (₹)</label><input class="input" id="sR${p}" inputmode="numeric" value="${st.rates[p] || ''}"></div>`).join('')}</div>
+    <div class="field"><label for="sPass">Elite Pass price · 12 hours, never expires (₹)</label><input class="input" id="sPass" inputmode="numeric" value="${st.pass}"></div>
+    <button class="btn primary wide" onclick="savePricing()">Save pricing</button></div>
+  <h2>Shop <em>details</em></h2>
+  <div class="card"><div class="row2"><div class="field"><label for="sOpen">Opens</label><input class="input" id="sOpen" type="time" value="${st.open}"></div><div class="field"><label for="sClose">Closes</label><input class="input" id="sClose" type="time" value="${st.close}"></div></div>
+    <div class="field"><label for="sWa">WhatsApp Business number</label><input class="input" id="sWa" inputmode="numeric" maxlength="10" value="${esc(st.wa)}"><div class="muted small" style="margin-top:6px">Booking confirmations go out from this number.</div></div>
+    <button class="btn primary wide" onclick="saveShop()">Save shop details</button></div>
+  <h2>WhatsApp <em>sent</em></h2>
+  <div class="list">${msgs.length ? msgs.map(m => `<div class="card li"><div class="m"><b>${esc(m.name || '+91 ' + m.to)} · ${m.kind === 'walk-in' ? 'Session started' : 'Booking confirmed'}</b><span class="muted small">+91 ${m.to} · ${fmtDay(m.at)} ${fmtT(m.at)}</span></div>
+    <div class="acts"><button class="btn sm" onclick="showMsg('${m.id}')">View</button></div></div>`).join('') : '<div class="card empty">Confirmations appear here as bookings come in.</div>'}</div>
+  <h2>Admin <em>account</em></h2>
+  <div class="card"><div class="field"><label for="aId">Admin ID</label><input class="input" id="aId" value="${esc(st.admin.id)}" autocapitalize="none"></div>
+    <div class="field"><label for="aNew">New password</label><input class="input" id="aNew" type="password" autocomplete="new-password" placeholder="Leave empty to keep current"></div>
+    <div class="field"><label for="aCur">Current password *</label><input class="input" id="aCur" type="password" autocomplete="current-password"></div>
+    <button class="btn primary wide" onclick="saveAdmin()">Update login</button></div>
+  <div class="stack" style="margin-top:22px">
+    <button class="btn wide" onclick="adminLogout()">Log out</button>
+    <a class="btn ghost wide" href="#play">Open player app</a>
+    ${F.reset ? `<button class="btn danger wide" onclick="resetDemo()">Yes, erase everything and reload sample data</button>` : `<button class="btn ghost wide" onclick="F.reset=true;render()">Reset demo data…</button>`}</div>`;
+}
+function showMsg(id){ const m = S.outbox.find(x => x.id === id); openSheet(`<h3>WhatsApp message</h3><div class="sub">To ${esc(m.name)} · +91 ${m.to}</div>${waPreview(m, false)}<div class="stack" style="margin-top:14px"><a class="btn wa wide" target="_blank" rel="noopener" href="${waLink(m.to, m.text)}">Send again in WhatsApp</a><button class="btn wide" onclick="closeSheet()">Close</button></div>`); }
+function resetDemo(){ const admin = S.settings.admin; S = seed(); S.settings.admin = admin; save(); meId = null; ls.del('pxo_me'); F = {}; render(); toast('Demo data reset'); }
+function toggleStGame(id, g){
+  const s = S.stations.find(x => x.id === id); s.games = s.games || [];
+  const i = s.games.indexOf(g); if (i > -1) s.games.splice(i, 1); else s.games.push(g);
+  save(); render(); toast(`${g} ${i > -1 ? 'removed from' : 'added to'} ${s.name}`);
+}
+function addGame(){
+  const g = ($('newGame').value || '').trim();
+  if (!g) return toast('Type the game name first');
+  if (allGames().some(x => x.toLowerCase() === g.toLowerCase())) return toast('That game is already in the list');
+  S.games.push(g); save(); render(); toast(`${g} added. Now tick the PS5s that have it.`);
+}
+function removeGame(g){
+  F.rmg = null; S.games = allGames().filter(x => x !== g);
+  S.stations.forEach(s => s.games = (s.games || []).filter(x => x !== g));
+  save(); render(); toast(`${g} removed from all PS5s`);
+}
+function renameStation(id, v){ const s = S.stations.find(x => x.id === id); if (!v.trim()) return; s.name = v.trim(); save(); toast('Station renamed'); }
+function toggleOff(id){
+  const s = S.stations.find(x => x.id === id);
+  if (!s.off && activeOn(id)) return toast('End the current session first');
+  const clash = !s.off && S.bookings.filter(k => k.stationId === id && k.status === 'upcoming');
+  s.off = !s.off; save(); render();
+  toast(s.off ? `${s.name} is out of service${clash.length ? ` · move its ${clash.length} booking${clash.length > 1 ? 's' : ''} from Schedule` : ''}` : `${s.name} is back in service`);
+}
+function addStation(){
+  const v = ($('newSt').value || '').trim() || 'PS5 · ' + pad(S.stations.length + 1);
+  S.stations.push({id:'s' + uid(), name:v, games:[]}); save(); render(); toast(`${v} added. Tick its installed games.`);
+}
+function removeStation(id){
+  F.rm = null;
+  if (activeOn(id) || S.bookings.some(k => k.stationId === id && k.status === 'upcoming')){ render(); return toast('That station has a live session or booking'); }
+  const n = stName(id); S.stations = S.stations.filter(x => x.id !== id); save(); render(); toast(`${n} removed`);
+}
+function savePricing(){
+  [1,2,3,4].forEach(p => { const v = +$('sR' + p).value; if (v > 0) S.settings.rates[p] = v; });
+  S.settings.pass = Math.max(1, +$('sPass').value || S.settings.pass); save(); render(); toast('Pricing saved');
+}
+function saveShop(){
+  S.settings.wa = ph10($('sWa').value) || S.settings.wa; S.settings.open = $('sOpen').value || '10:30'; S.settings.close = $('sClose').value || '01:00';
+  save(); render(); toast('Shop details saved');
+}
+function saveAdmin(){
+  const a = S.settings.admin, id = $('aId').value.trim(), nw = $('aNew').value, cur = $('aCur').value;
+  if (cur !== a.pass) return toast('Current password is wrong');
+  if (!id) return toast('Admin ID can\'t be empty');
+  if (nw && nw.length < 6) return toast('New password needs at least 6 characters');
+  a.id = id; if (nw) a.pass = nw; save(); render(); toast('Login updated');
+}
+
+/* ---------- boot ---------- */
+S = load() || seed();
+if (!S.users) S = seed();
+if (!S.settings.admin) S.settings.admin = {id:'admin', pass:'portal123'};
+if (!S.outbox) S.outbox = [];
+if (!S.games){ S.games = [...GAMES]; S.stations.forEach(st => { if (!st.games) st.games = [...(SEED_GAMES[st.id] || [])]; }); }
+meId = ls.get('pxo_me'); if (!userById(meId)) meId = null;
+adminOk = ls.get('pxo_admin_ok') === '1';
+syncMode(); save(); render();
+setInterval(tick, 1000);
+setInterval(() => {
+  const typing = document.activeElement && /INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName);
+  if ($('sheet').hidden && !typing && mode === 'admin' && adminOk && (atab === 'live' || atab === 'schedule')) render();
+}, 20000);
+</script>
+</body>
+</html>
